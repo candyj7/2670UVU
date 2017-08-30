@@ -1,0 +1,5016 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!29 &1
+OcclusionCullingSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_OcclusionBakeSettings:
+    smallestOccluder: 5
+    smallestHole: 0.25
+    backfaceThreshold: 100
+  m_SceneGUID: 00000000000000000000000000000000
+  m_OcclusionCullingData: {fileID: 0}
+--- !u!104 &2
+RenderSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 8
+  m_Fog: 0
+  m_FogColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  m_FogMode: 3
+  m_FogDensity: 0.01
+  m_LinearFogStart: 0
+  m_LinearFogEnd: 300
+  m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
+  m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
+  m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
+  m_AmbientIntensity: 1
+  m_AmbientMode: 0
+  m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
+  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  m_HaloStrength: 0.5
+  m_FlareStrength: 1
+  m_FlareFadeSpeed: 3
+  m_HaloTexture: {fileID: 0}
+  m_SpotCookie: {fileID: 10001, guid: 0000000000000000e000000000000000, type: 0}
+  m_DefaultReflectionMode: 0
+  m_DefaultReflectionResolution: 128
+  m_ReflectionBounces: 1
+  m_ReflectionIntensity: 1
+  m_CustomReflection: {fileID: 0}
+  m_Sun: {fileID: 0}
+  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
+--- !u!157 &3
+LightmapSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 11
+  m_GIWorkflowMode: 0
+  m_GISettings:
+    serializedVersion: 2
+    m_BounceScale: 1
+    m_IndirectOutputScale: 1
+    m_AlbedoBoost: 1
+    m_TemporalCoherenceThreshold: 1
+    m_EnvironmentLightingMode: 0
+    m_EnableBakedLightmaps: 1
+    m_EnableRealtimeLightmaps: 1
+  m_LightmapEditorSettings:
+    serializedVersion: 9
+    m_Resolution: 2
+    m_BakeResolution: 40
+    m_TextureWidth: 1024
+    m_TextureHeight: 1024
+    m_AO: 0
+    m_AOMaxDistance: 1
+    m_CompAOExponent: 1
+    m_CompAOExponentDirect: 0
+    m_Padding: 2
+    m_LightmapParameters: {fileID: 0}
+    m_LightmapsBakeMode: 1
+    m_TextureCompression: 1
+    m_FinalGather: 0
+    m_FinalGatherFiltering: 1
+    m_FinalGatherRayCount: 256
+    m_ReflectionCompression: 2
+    m_MixedBakeMode: 2
+    m_BakeBackend: 0
+    m_PVRSampling: 1
+    m_PVRDirectSampleCount: 32
+    m_PVRSampleCount: 500
+    m_PVRBounces: 2
+    m_PVRFiltering: 0
+    m_PVRFilteringMode: 1
+    m_PVRCulling: 1
+    m_PVRFilteringGaussRadiusDirect: 1
+    m_PVRFilteringGaussRadiusIndirect: 5
+    m_PVRFilteringGaussRadiusAO: 2
+    m_PVRFilteringAtrousColorSigma: 1
+    m_PVRFilteringAtrousNormalSigma: 1
+    m_PVRFilteringAtrousPositionSigma: 1
+  m_LightingDataAsset: {fileID: 0}
+  m_UseShadowmask: 1
+--- !u!196 &4
+NavMeshSettings:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_BuildSettings:
+    serializedVersion: 2
+    agentTypeID: 0
+    agentRadius: 0.5
+    agentHeight: 2
+    agentSlope: 45
+    agentClimb: 0.4
+    ledgeDropHeight: 0
+    maxJumpAcrossDistance: 0
+    minRegionArea: 2
+    manualCellSize: 0
+    cellSize: 0.16666667
+    manualTileSize: 0
+    tileSize: 256
+    accuratePlacement: 0
+  m_NavMeshData: {fileID: 0}
+--- !u!1 &461016701
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 461016706}
+  - component: {fileID: 461016705}
+  - component: {fileID: 461016704}
+  - component: {fileID: 461016703}
+  - component: {fileID: 461016702}
+  m_Layer: 0
+  m_Name: Main Camera
+  m_TagString: MainCamera
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!81 &461016702
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 461016701}
+  m_Enabled: 1
+--- !u!124 &461016703
+Behaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 461016701}
+  m_Enabled: 1
+--- !u!92 &461016704
+Behaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 461016701}
+  m_Enabled: 1
+--- !u!20 &461016705
+Camera:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 461016701}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_ClearFlags: 1
+  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_NormalizedViewPortRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+  near clip plane: 0.3
+  far clip plane: 1000
+  field of view: 60
+  orthographic: 0
+  orthographic size: 5
+  m_Depth: -1
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingPath: -1
+  m_TargetTexture: {fileID: 0}
+  m_TargetDisplay: 0
+  m_TargetEye: 3
+  m_HDR: 1
+  m_AllowMSAA: 1
+  m_ForceIntoRT: 0
+  m_OcclusionCulling: 1
+  m_StereoConvergence: 10
+  m_StereoSeparation: 0.022
+  m_StereoMirrorMode: 0
+--- !u!4 &461016706
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 461016701}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 1, z: -10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &501909887
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd2db8917335237438c5919ad082f019, type: 3}
+  m_Name: rock1_UndoInfo
+  m_EditorClassIdentifier: 
+  isGeoVisible: 1
+  showPinnedInstances: 1
+  showOnlyVertexColours: 0
+  generateUVs: 0
+  generateLightmapUV2s: 0
+  generateTangents: 1
+  enableCooking: 1
+  cookingTriggersDownCooks: 1
+  playmodePerFrameCooking: 0
+  pushUnityTransformToHoudini: 1
+  transformChangeTriggersCooks: 0
+  importTemplatedGeos: 0
+  splitGeosByGroupOverride: 0
+  splitGeosByGroup: 1
+  splitPointsGeosByGroupOverride: 0
+  splitPointsByVertexAttribute: 1
+  splitPointsByVertexAttributeOverride: 0
+  omitPartNameEnumeration: 0
+  bakeStartTime: 0
+  bakeEndTime: 1
+  bakeSamplesPerSecond: 30
+--- !u!1 &614182831
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 614182833}
+  - component: {fileID: 614182832}
+  m_Layer: 0
+  m_Name: uninitialized_geo
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &614182832
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 614182831}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d560dd11496e0249b374ce33d65f155, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myAssetId: 0
+  myNodeId: 3
+  myObjectNodeId: 3
+  myAsset: {fileID: 1627627259}
+  myObjectId: 3
+  myObjectName: sphere_object1
+  myObjectVisible: 1
+  myObjectInfo:
+    hasTransformChanged: 0
+    haveGeosChanged: 0
+    isVisible: 0
+    isInstancer: 0
+    isInstanced: 0
+    geoCount: 0
+    nodeId: -1
+    objectToInstanceId: 0
+  myGeos: []
+  myGeoId: 4
+  myGeoName: geo_name
+  myGeoType: 0
+  myIsEditable: 0
+  myIsDisplay: 1
+  myObjectControl: {fileID: 750544579}
+  myGeoAttributeManager: {fileID: 0}
+  myParts: []
+--- !u!4 &614182833
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 614182831}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 750544580}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &750544578
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 750544580}
+  - component: {fileID: 750544579}
+  m_Layer: 0
+  m_Name: sphere_object1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &750544579
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 750544578}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff99a095fe19b134ba65828c84ebb09e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myAssetId: 0
+  myNodeId: 3
+  myObjectNodeId: 3
+  myAsset: {fileID: 1627627259}
+  myObjectId: 3
+  myObjectName: sphere_object1
+  myObjectVisible: 1
+  myObjectInfo:
+    hasTransformChanged: 0
+    haveGeosChanged: 0
+    isVisible: 0
+    isInstancer: 0
+    isInstanced: 0
+    geoCount: 0
+    nodeId: -1
+    objectToInstanceId: 0
+  myGeos:
+  - {fileID: 614182831}
+--- !u!4 &750544580
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 750544578}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.06535542, y: 0.33088875, z: -0.14370465}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 614182833}
+  m_Father: {fileID: 1627627260}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &757090889
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd2db8917335237438c5919ad082f019, type: 3}
+  m_Name: rock2_UndoInfo
+  m_EditorClassIdentifier: 
+  isGeoVisible: 1
+  showPinnedInstances: 1
+  showOnlyVertexColours: 0
+  generateUVs: 0
+  generateLightmapUV2s: 0
+  generateTangents: 1
+  enableCooking: 1
+  cookingTriggersDownCooks: 1
+  playmodePerFrameCooking: 0
+  pushUnityTransformToHoudini: 1
+  transformChangeTriggersCooks: 0
+  importTemplatedGeos: 0
+  splitGeosByGroupOverride: 0
+  splitGeosByGroup: 1
+  splitPointsGeosByGroupOverride: 0
+  splitPointsByVertexAttribute: 1
+  splitPointsByVertexAttributeOverride: 0
+  omitPartNameEnumeration: 0
+  bakeStartTime: 0
+  bakeEndTime: 1
+  bakeSamplesPerSecond: 30
+--- !u!1 &905427721
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 905427723}
+  - component: {fileID: 905427722}
+  m_Layer: 0
+  m_Name: sphere_object1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &905427722
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 905427721}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff99a095fe19b134ba65828c84ebb09e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myAssetId: 5
+  myNodeId: 6
+  myObjectNodeId: 6
+  myAsset: {fileID: 1577221647}
+  myObjectId: 6
+  myObjectName: sphere_object1
+  myObjectVisible: 1
+  myObjectInfo:
+    hasTransformChanged: 0
+    haveGeosChanged: 0
+    isVisible: 0
+    isInstancer: 0
+    isInstanced: 0
+    geoCount: 0
+    nodeId: -1
+    objectToInstanceId: 0
+  myGeos:
+  - {fileID: 1944467857}
+--- !u!4 &905427723
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 905427721}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.06535542, y: 0.33088875, z: -0.14370465}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1944467859}
+  m_Father: {fileID: 1577221648}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1387064369
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: afb61dda6b88a5d4e895b869b3254b40, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parmNames:
+  - xOrd
+  - rOrd
+  - t
+  - r
+  - s
+  - p
+  - scale
+  - pre_xform
+  - keeppos
+  - childcomp
+  - constraints_on
+  - constraints_path
+  - lookatpath
+  - lookupobjpath
+  - lookup
+  - pathobjpath
+  - roll
+  - pos
+  - uparmtype
+  - pathorient
+  - up
+  - bank
+  - label1
+  - label2
+  - label3
+  - label4
+  - tdisplay
+  - display
+  - outputobj
+  - visibleobjects
+  - picking
+  - pickscript
+  - caching
+  - use_dcolor
+  - dcolor
+  - scale2
+  - freq
+  - lac
+  - rough
+  parmIndices: 0000000001000000000000000300000006000000090000000c0000000200000003000000040000000500000000000000010000000200000003000000040000000d0000000e00000006000000070000000f00000012000000050000000600000007000000080000000800000009000000090000000a0000000a0000000b0000000b0000000c00000013000000160000000d0000001700000018000000
+  parmIntValues: 0000000000000000000000000000000000000000000000000100000001000000000000000100000001000000010000000100000002000000
+  parmFloatValues:
+  - 1.4963617
+  - 0
+  - 2.0352404
+  - 0
+  - -0
+  - 0
+  - 1
+  - 1
+  - 1
+  - 0
+  - 0
+  - 0
+  - 1
+  - 0
+  - 0
+  - 0
+  - 1
+  - 0
+  - 0
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1.841
+  - 0.5
+  parmStringValues:
+  - 
+  - 
+  - 
+  - on
+  - 
+  - 'Sub-Network Input #1'
+  - 'Sub-Network Input #2'
+  - 'Sub-Network Input #3'
+  - 'Sub-Network Input #4'
+  - _input1_obj_
+  - '*'
+  - 
+--- !u!114 &1421828518
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: afb61dda6b88a5d4e895b869b3254b40, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parmNames:
+  - xOrd
+  - rOrd
+  - t
+  - r
+  - s
+  - p
+  - scale
+  - pre_xform
+  - keeppos
+  - childcomp
+  - constraints_on
+  - constraints_path
+  - lookatpath
+  - lookupobjpath
+  - lookup
+  - pathobjpath
+  - roll
+  - pos
+  - uparmtype
+  - pathorient
+  - up
+  - bank
+  - label1
+  - label2
+  - label3
+  - label4
+  - tdisplay
+  - display
+  - outputobj
+  - visibleobjects
+  - picking
+  - pickscript
+  - caching
+  - use_dcolor
+  - dcolor
+  - scale2
+  - freq
+  - lac
+  - rough
+  parmIndices: 0000000001000000000000000300000006000000090000000c0000000200000003000000040000000500000000000000010000000200000003000000040000000d0000000e00000006000000070000000f00000012000000050000000600000007000000080000000800000009000000090000000a0000000a0000000b0000000b0000000c00000013000000160000000d0000001700000018000000
+  parmIntValues: 0000000000000000000000000000000000000000000000000100000001000000000000000100000001000000010000000100000002000000
+  parmFloatValues:
+  - -1.0897667
+  - 0
+  - 0.6330466
+  - 0
+  - -0
+  - 0
+  - 1
+  - 1
+  - 1
+  - 0
+  - 0
+  - 0
+  - 1
+  - 0
+  - 0
+  - 0
+  - 1
+  - 0
+  - 0
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1.841
+  - 0.5
+  parmStringValues:
+  - 
+  - 
+  - 
+  - on
+  - 
+  - 'Sub-Network Input #1'
+  - 'Sub-Network Input #2'
+  - 'Sub-Network Input #3'
+  - 'Sub-Network Input #4'
+  - _input1_obj_
+  - '*'
+  - 
+--- !u!1 &1577221645
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1577221648}
+  - component: {fileID: 1577221647}
+  - component: {fileID: 1577221646}
+  m_Layer: 0
+  m_Name: rock2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1577221646
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1577221645}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d50d11faa64faa243b8964c758f67fa5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myControl: {fileID: 1577221647}
+  myEditable: 1
+  myParmCount: 42
+  myParmIntValueCount: 14
+  myParmFloatValueCount: 25
+  myprParmStringValueCoun: 12
+  myprParmChoiceCount: 46
+  myParms:
+  - id: 0
+    parentId: -1
+    childIndex: 0
+    type: 11
+    typeInfoSH: 0
+    permissions: 0
+    tagCount: 0
+    size: 2
+    choiceCount: 0
+    hasMin: 0
+    hasMax: 0
+    hasUIMin: 0
+    hasUIMax: 0
+    min: 0
+    max: 10
+    UIMin: 0
+    UIMax: 10
+    invisible: 0
+    disabled: 0
+    spare: 0
+    joinNext: 0
+    labelNone: 0
+    intValuesIndex: -1
+    floatValuesIndex: -1
+    stringValuesIndex: -1
+    choiceIndex: -1
+    isChildOfMultiParm: 0
+    instanceNum: -1
+    instanceLength: 0
+    instanceCount: 0
+    instanceStartOffset: -1
+    rampType: -1
+  - id: 1
+    parentId: -1
+    childIndex: 1
+    type: 13
+    typeInfoSH: 0
+    permissions: 0
+    tagCount: 0
+    size: 22
+    choiceCount: 0
+    hasMin: 0
+    hasMax: 0
+    hasUIMin: 0
+    hasUIMax: 0
+    min: 0
+    max: 10
+    UIMin: 0
+    UIMax: 10
+    invisible: 0
+    disabled: 0
+    spare: 0
+    joinNext: 0
+    labelNone: 0
+    intValuesIndex: -1
+    floatValuesIndex: -1
+    stringValuesIndex: -1
+    choiceIndex: -1
+    isChildOfMultiParm: 0
+    instanceNum: -1
+    instanceLength: 0
+    instanceCount: 0
+    instanceStartOffset: -1
+    rampType: -1
+  - id: 2
+    parentId: -1
+    childIndex: 2
+    type: 13
+    typeInfoSH: 0
+    permissions: 0
+    tagCount: 0
+    size: 13
+    choiceCount: 0
+    hasMin: 0
+    hasMax: 0
+    hasUIMin: 0
+    hasUIMax: 0
+    min: 0
+    max: 10
+    UIMin: 0
+    UIMax: 10
+    invisible: 0
+    disabled: 0
+    spare: 0
+    joinNext: 0
+    labelNone: 0
+    intValuesIndex: -1
+    floatValuesIndex: -1
+    stringValuesIndex: -1
+    choiceIndex: -1
+    isChildOfMultiParm: 0
+    instanceNum: -1
+    instanceLength: 0
+    instanceCount: 0
+    instanceStartOffset: -1
+    rampType: -1
+  - id: 3
+    parentId: 1
+    childIndex: 0
+    type: 0
+    typeInfoSH: 0
+    permissions: 0
+    tagCount: 0
+    size: 1
+    choiceCount: 6
+    hasMin: 0
+    hasMax: 0
+    hasUIMin: 0
+    hasUIMax: 0
+    min: 0
+    max: 10
+    UIMin: 0
+    UIMax: 10
+    invisible: 0
+    disabled: 0
+    spare: 0
+    joinNext: 1
+    labelNone: 0
+    intValuesIndex: 0
+    floatValuesIndex: -1
+    stringValuesIndex: -1
+    choiceIndex: 0
+    isChildOfMultiParm: 0
+    instanceNum: -1
+    instanceLength: 0
+    instanceCount: 0
+    instanceStartOffset: -1
+    rampType: -1
+  - id: 4
+    parentId: 1
+    childIndex: 1
+    type: 0
+    typeInfoSH: 0
+    permissions: 0
+    tagCount: 0
+    size: 1
+    choiceCount: 6
+    hasMin: 0
+    hasMax: 0
+    hasUIMin: 0
+    hasUIMax: 0
+    min: 0
+    max: 10
+    UIMin: 0
+    UIMax: 10
+    invisible: 0
+    disabled: 0
+    spare: 0
+    joinNext: 0
+    labelNone: 0
+    intValuesIndex: 1
+    floatValuesIndex: -1
+    stringValuesIndex: -1
+    choiceIndex: 6
+    isChildOfMultiParm: 0
+    instanceNum: -1
+    instanceLength: 0
+    instanceCount: 0
+    instanceStartOffset: -1
+    rampType: -1
+  - id: 5
+    parentId: 1
+    childIndex: 2
+    type: 4
+    typeInfoSH: 0
+    permissions: 0
+    tagCount: 4
+    size: 3
+    choiceCount: 0
+    hasMin: 0
+    hasMax: 0
+    hasUIMin: 0
+    hasUIMax: 0
+    min: 0
+    max: 10
+    UIMin: 0
+    UIMax: 10
+    invisible: 0
+    disabled: 0
+    spare: 0
+    joinNext: 0
+    labelNone: 0
+    intValuesIndex: -1
+    floatValuesIndex: 0
+    stringValuesIndex: -1
+    choiceIndex: 12
+    isChildOfMultiParm: 0
+    instanceNum: -1
+    instanceLength: 0
+    instanceCount: 0
+    instanceStartOffset: -1
+    rampType: -1
+  - id: 6
+    parentId: 1
+    childIndex: 3
+    type: 4
+    typeInfoSH: 0
+    permissions: 0
+    tagCount: 4
+    size: 3
+    choiceCount: 0
+    hasMin: 0
+    hasMax: 0
+    hasUIMin: 1
+    hasUIMax: 1
+    min: 0
+    max: 360
+    UIMin: 0
+    UIMax: 360
+    invisible: 0
+    disabled: 0
+    spare: 0
+    joinNext: 0
+    labelNone: 0
+    intValuesIndex: -1
+    floatValuesIndex: 3
+    stringValuesIndex: -1
+    choiceIndex: 12
+    isChildOfMultiParm: 0
+    instanceNum: -1
+    instanceLength: 0
+    instanceCount: 0
+    instanceStartOffset: -1
+    rampType: -1
+  - id: 7
+    parentId: 1
+    childIndex: 4
+    type: 4
+    typeInfoSH: 0
+    permissions: 0
+    tagCount: 4
+    size: 3
+    choiceCount: 0
+    hasMin: 0
+    hasMax: 0
+    hasUIMin: 0
+    hasUIMax: 0
+    min: 0
+    max: 10
+    UIMin: 0
+    UIMax: 10
+    invisible: 0
+    disabled: 0
+    spare: 0
+    joinNext: 0
+    labelNone: 0
+    intValuesIndex: -1
+    floatValuesIndex: 6
+    stringValuesIndex: -1
+    choiceIndex: 12
+    isChildOfMultiParm: 0
+    instanceNum: -1
+    instanceLength: 0
+    instanceCount: 0
+    instanceStartOffset: -1
+    rampType: -1
+  - id: 8
+    parentId: 1
+    childIndex: 5
+    type: 4
+    typeInfoSH: 0
+    permissions: 0
+    tagCount: 3
+    size: 3
+    choiceCount: 0
+    hasMin: 0
+    hasMax: 0
+    hasUIMin: 0
+    hasUIMax: 0
+    min: 0
+    max: 10
+    UIMin: 0
+    UIMax: 10
+    invisible: 0
+    disabled: 0
+    spare: 0
+    joinNext: 0
+    labelNone: 0
+    intValuesIndex: -1
+    floatValuesIndex: 9
+    stringValuesIndex: -1
+    choiceIndex: 12
+    isChildOfMultiParm: 0
+    instanceNum: -1
+    instanceLength: 0
+    instanceCount: 0
+    instanceStartOffset: -1
+    rampType: -1
+  - id: 9
+    parentId: 1
+    childIndex: 6
+    type: 4
+    typeInfoSH: 0
+    permissions: 0
+    tagCount: 0
+    size: 1
+    choiceCount: 0
+    hasMin: 0
+    hasMax: 0
+    hasUIMin: 0
+    hasUIMax: 0
+    min: 0
+    max: 10
+    UIMin: 0
+    UIMax: 10
+    invisible: 0
+    disabled: 0
+    spare: 0
+    joinNext: 0
+    labelNone: 0
+    intValuesIndex: -1
+    floatValuesIndex: 12
+    stringValuesIndex: -1
+    choiceIndex: 12
+    isChildOfMultiParm: 0
+    instanceNum: -1
+    instanceLength: 0
+    instanceCount: 0
+    instanceStartOffset: -1
+    rampType: -1
+  - id: 10
+    parentId: 1
+    childIndex: 7
+    type: 3
+    typeInfoSH: 0
+    permissions: 0
+    tagCount: 0
+    size: 1
+    choiceCount: 6
+    hasMin: 0
+    hasMax: 0
+    hasUIMin: 0
+    hasUIMax: 0
+    min: 0
+    max: 10
+    UIMin: 0
+    UIMax: 10
+    invisible: 0
+    disabled: 0
+    spare: 0
+    joinNext: 0
+    labelNone: 0
+    intValuesIndex: 2
+    floatValuesIndex: -1
+    stringValuesIndex: -1
+    choiceIndex: 12
+    isChildOfMultiParm: 0
+    instanceNum: -1
+    instanceLength: 0
+    instanceCount: 0
+    instanceStartOffset: -1
+    rampType: -1
+  - id: 11
+    parentId: 1
+    childIndex: 8
+    type: 2
+    typeInfoSH: 0
+    permissions: 0
+    tagCount: 0
+    size: 1
+    choiceCount: 2
+    hasMin: 0
+    hasMax: 0
+    hasUIMin: 0
+    hasUIMax: 0
+    min: 0
+    max: 10
+    UIMin: 0
+    UIMax: 10
+    invisible: 0
+    disabled: 0
+    spare: 0
+    joinNext: 0
+    labelNone: 0
+    intValuesIndex: 3
+    floatValuesIndex: -1
+    stringValuesIndex: -1
+    choiceIndex: 18
+    isChildOfMultiParm: 0
+    instanceNum: -1
+    instanceLength: 0
+    instanceCount: 0
+    instanceStartOffset: -1
+    rampType: -1
+  - id: 12
+    parentId: 1
+    childIndex: 9
+    type: 2
+    typeInfoSH: 0
+    permissions: 0
+    tagCount: 0
+    size: 1
+    choiceCount: 2
+    hasMin: 0
+    hasMax: 0
+    hasUIMin: 0
+    hasUIMax: 0
+    min: 0
+    max: 10
+    UIMin: 0
+    UIMax: 10
+    invisible: 0
+    disabled: 0
+    spare: 0
+    joinNext: 0
+    labelNone: 0
+    intValuesIndex: 4
+    floatValuesIndex: -1
+    stringValuesIndex: -1
+    choiceIndex: 20
+    isChildOfMultiParm: 0
+    instanceNum: -1
+    instanceLength: 0
+    instanceCount: 0
+    instanceStartOffset: -1
+    rampType: -1
+  - id: 13
+    parentId: 1
+    childIndex: 10
+    type: 2
+    typeInfoSH: 0
+    permissions: 0
+    tagCount: 0
+    size: 1
+    choiceCount: 2
+    hasMin: 0
+    hasMax: 0
+    hasUIMin: 0
+    hasUIMax: 0
+    min: 0
+    max: 10
+    UIMin: 0
+    UIMax: 10
+    invisible: 0
+    disabled: 0
+    spare: 0
+    joinNext: 0
+    labelNone: 0
+    intValuesIndex: 5
+    floatValuesIndex: -1
+    stringValuesIndex: -1
+    choiceIndex: 22
+    isChildOfMultiParm: 0
+    instanceNum: -1
+    instanceLength: 0
+    instanceCount: 0
+    instanceStartOffset: -1
+    rampType: -1
+  - id: 14
+    parentId: 1
+    childIndex: 11
+    type: 10
+    typeInfoSH: 0
+    permissions: 0
+    tagCount: 5
+    size: 1
+    choiceCount: 0
+    hasMin: 0
+    hasMax: 0
+    hasUIMin: 0
+    hasUIMax: 0
+    min: 0
+    max: 10
+    UIMin: 0
+    UIMax: 10
+    invisible: 1
+    disabled: 0
+    spare: 0
+    joinNext: 0
+    labelNone: 0
+    intValuesIndex: -1
+    floatValuesIndex: -1
+    stringValuesIndex: 0
+    choiceIndex: 24
+    isChildOfMultiParm: 0
+    instanceNum: -1
+    instanceLength: 0
+    instanceCount: 0
+    instanceStartOffset: -1
+    rampType: -1
+  - id: 15
+    parentId: 1
+    childIndex: 12
+    type: 10
+    typeInfoSH: 0
+    permissions: 0
+    tagCount: 2
+    size: 1
+    choiceCount: 0
+    hasMin: 0
+    hasMax: 0
+    hasUIMin: 0
+    hasUIMax: 0
+    min: 0
+    max: 10
+    UIMin: 0
+    UIMax: 10
+    invisible: 1
+    disabled: 0
+    spare: 0
+    joinNext: 0
+    labelNone: 0
+    intValuesIndex: -1
+    floatValuesIndex: -1
+    stringValuesIndex: 1
+    choiceIndex: 24
+    isChildOfMultiParm: 0
+    instanceNum: -1
+    instanceLength: 0
+    instanceCount: 0
+    instanceStartOffset: -1
+    rampType: -1
+  - id: 16
+    parentId: 1
+    childIndex: 13
+    type: 10
+    typeInfoSH: 0
+    permissions: 0
+    tagCount: 2
+    size: 1
+    choiceCount: 0
+    hasMin: 0
+    hasMax: 0
+    hasUIMin: 0
+    hasUIMax: 0
+    min: 0
+    max: 10
+    UIMin: 0
+    UIMax: 10
+    invisible: 1
+    disabled: 1
+    spare: 0
+    joinNext: 0
+    labelNone: 0
+    intValuesIndex: -1
+    floatValuesIndex: -1
+    stringValuesIndex: 2
+    choiceIndex: 24
+    isChildOfMultiParm: 0
+    instanceNum: -1
+    instanceLength: 0
+    instanceCount: 0
+    instanceStartOffset: -1
+    rampType: -1
+  - id: 17
+    parentId: 1
+    childIndex: 14
+    type: 6
+    typeInfoSH: 0
+    permissions: 0
+    tagCount: 0
+    size: 1
+    choiceCount: 5
+    hasMin: 0
+    hasMax: 0
+    hasUIMin: 0
+    hasUIMax: 0
+    min: 0
+    max: 10
+    UIMin: 0
+    UIMax: 10
+    invisible: 1
+    disabled: 1
+    spare: 0
+    joinNext: 0
+    labelNone: 0
+    intValuesIndex: -1
+    floatValuesIndex: -1
+    stringValuesIndex: 3
+    choiceIndex: 24
+    isChildOfMultiParm: 0
+    instanceNum: -1
+    instanceLength: 0
+    instanceCount: 0
+    instanceStartOffset: -1
+    rampType: -1
+  - id: 18
+    parentId: 1
+    childIndex: 15
+    type: 10
+    typeInfoSH: 0
+    permissions: 0
+    tagCount: 2
+    size: 1
+    choiceCount: 0
+    hasMin: 0
+    hasMax: 0
+    hasUIMin: 0
+    hasUIMax: 0
+    min: 0
+    max: 10
+    UIMin: 0
+    UIMax: 10
+    invisible: 1
+    disabled: 0
+    spare: 0
+    joinNext: 0
+    labelNone: 0
+    intValuesIndex: -1
+    floatValuesIndex: -1
+    stringValuesIndex: 4
+    choiceIndex: 29
+    isChildOfMultiParm: 0
+    instanceNum: -1
+    instanceLength: 0
+    instanceCount: 0
+    instanceStartOffset: -1
+    rampType: -1
+  - id: 19
+    parentId: 1
+    childIndex: 16
+    type: 4
+    typeInfoSH: 0
+    permissions: 0
+    tagCount: 0
+    size: 1
+    choiceCount: 0
+    hasMin: 0
+    hasMax: 0
+    hasUIMin: 1
+    hasUIMax: 1
+    min: -360
+    max: 360
+    UIMin: -360
+    UIMax: 360
+    invisible: 1
+    disabled: 1
+    spare: 0
+    joinNext: 0
+    labelNone: 0
+    intValuesIndex: -1
+    floatValuesIndex: 13
+    stringValuesIndex: -1
+    choiceIndex: 29
+    isChildOfMultiParm: 0
+    instanceNum: -1
+    instanceLength: 0
+    instanceCount: 0
+    instanceStartOffset: -1
+    rampType: -1
+  - id: 20
+    parentId: 1
+    childIndex: 17
+    type: 4
+    typeInfoSH: 0
+    permissions: 0
+    tagCount: 0
+    size: 1
+    choiceCount: 0
+    hasMin: 1
+    hasMax: 0
+    hasUIMin: 1
+    hasUIMax: 1
+    min: 0
+    max: 10
+    UIMin: 0
+    UIMax: 10
+    invisible: 1
+    disabled: 1
+    spare: 0
+    joinNext: 0
+    labelNone: 0
+    intValuesIndex: -1
+    floatValuesIndex: 14
+    stringValuesIndex: -1
+    choiceIndex: 29
+    isChildOfMultiParm: 0
+    instanceNum: -1
+    instanceLength: 0
+    instanceCount: 0
+    instanceStartOffset: -1
+    rampType: -1
+  - id: 21
+    parentId: 1
+    childIndex: 18
+    type: 0
+    typeInfoSH: 0
+    permissions: 0
+    tagCount: 0
+    size: 1
+    choiceCount: 2
+    hasMin: 0
+    hasMax: 0
+    hasUIMin: 0
+    hasUIMax: 0
+    min: 0
+    max: 10
+    UIMin: 0
+    UIMax: 10
+    invisible: 1
+    disabled: 1
+    spare: 0
+    joinNext: 0
+    labelNone: 0
+    intValuesIndex: 6
+    floatValuesIndex: -1
+    stringValuesIndex: -1
+    choiceIndex: 29
+    isChildOfMultiParm: 0
+    instanceNum: -1
+    instanceLength: 0
+    instanceCount: 0
+    instanceStartOffset: -1
+    rampType: -1
+  - id: 22
+    parentId: 1
+    childIndex: 19
+    type: 0
+    typeInfoSH: 0
+    permissions: 0
+    tagCount: 0
+    size: 1
+    choiceCount: 0
+    hasMin: 0
+    hasMax: 0
+    hasUIMin: 1
+    hasUIMax: 1
+    min: 0
+    max: 1
+    UIMin: 0
+    UIMax: 1
+    invisible: 1
+    disabled: 1
+    spare: 0
+    joinNext: 0
+    labelNone: 0
+    intValuesIndex: 7
+    floatValuesIndex: -1
+    stringValuesIndex: -1
+    choiceIndex: 31
+    isChildOfMultiParm: 0
+    instanceNum: -1
+    instanceLength: 0
+    instanceCount: 0
+    instanceStartOffset: -1
+    rampType: -1
+  - id: 23
+    parentId: 1
+    childIndex: 20
+    type: 4
+    typeInfoSH: 0
+    permissions: 0
+    tagCount: 0
+    size: 3
+    choiceCount: 0
+    hasMin: 0
+    hasMax: 0
+    hasUIMin: 0
+    hasUIMax: 0
+    min: 0
+    max: 10
+    UIMin: 0
+    UIMax: 10
+    invisible: 1
+    disabled: 1
+    spare: 0
+    joinNext: 0
+    labelNone: 0
+    intValuesIndex: -1
+    floatValuesIndex: 15
+    stringValuesIndex: -1
+    choiceIndex: 31
+    isChildOfMultiParm: 0
+    instanceNum: -1
+    instanceLength: 0
+    instanceCount: 0
+    instanceStartOffset: -1
+    rampType: -1
+  - id: 24
+    parentId: 1
+    childIndex: 21
+    type: 4
+    typeInfoSH: 0
+    permissions: 0
+    tagCount: 0
+    size: 1
+    choiceCount: 0
+    hasMin: 0
+    hasMax: 0
+    hasUIMin: 1
+    hasUIMax: 1
+    min: -1
+    max: 1
+    UIMin: -1
+    UIMax: 1
+    invisible: 1
+    disabled: 1
+    spare: 0
+    joinNext: 0
+    labelNone: 0
+    intValuesIndex: -1
+    floatValuesIndex: 18
+    stringValuesIndex: -1
+    choiceIndex: 31
+    isChildOfMultiParm: 0
+    instanceNum: -1
+    instanceLength: 0
+    instanceCount: 0
+    instanceStartOffset: -1
+    rampType: -1
+  - id: 25
+    parentId: 2
+    childIndex: 0
+    type: 6
+    typeInfoSH: 0
+    permissions: 0
+    tagCount: 0
+    size: 1
+    choiceCount: 0
+    hasMin: 0
+    hasMax: 0
+    hasUIMin: 0
+    hasUIMax: 0
+    min: 0
+    max: 10
+    UIMin: 0
+    UIMax: 10
+    invisible: 1
+    disabled: 0
+    spare: 0
+    joinNext: 0
+    labelNone: 0
+    intValuesIndex: -1
+    floatValuesIndex: -1
+    stringValuesIndex: 5
+    choiceIndex: 31
+    isChildOfMultiParm: 0
+    instanceNum: -1
+    instanceLength: 0
+    instanceCount: 0
+    instanceStartOffset: -1
+    rampType: -1
+  - id: 26
+    parentId: 2
+    childIndex: 1
+    type: 6
+    typeInfoSH: 0
+    permissions: 0
+    tagCount: 0
+    size: 1
+    choiceCount: 0
+    hasMin: 0
+    hasMax: 0
+    hasUIMin: 0
+    hasUIMax: 0
+    min: 0
+    max: 10
+    UIMin: 0
+    UIMax: 10
+    invisible: 1
+    disabled: 0
+    spare: 0
+    joinNext: 0
+    labelNone: 0
+    intValuesIndex: -1
+    floatValuesIndex: -1
+    stringValuesIndex: 6
+    choiceIndex: 31
+    isChildOfMultiParm: 0
+    instanceNum: -1
+    instanceLength: 0
+    instanceCount: 0
+    instanceStartOffset: -1
+    rampType: -1
+  - id: 27
+    parentId: 2
+    childIndex: 2
+    type: 6
+    typeInfoSH: 0
+    permissions: 0
+    tagCount: 0
+    size: 1
+    choiceCount: 0
+    hasMin: 0
+    hasMax: 0
+    hasUIMin: 0
+    hasUIMax: 0
+    min: 0
+    max: 10
+    UIMin: 0
+    UIMax: 10
+    invisible: 1
+    disabled: 0
+    spare: 0
+    joinNext: 0
+    labelNone: 0
+    intValuesIndex: -1
+    floatValuesIndex: -1
+    stringValuesIndex: 7
+    choiceIndex: 31
+    isChildOfMultiParm: 0
+    instanceNum: -1
+    instanceLength: 0
+    instanceCount: 0
+    instanceStartOffset: -1
+    rampType: -1
+  - id: 28
+    parentId: 2
+    childIndex: 3
+    type: 6
+    typeInfoSH: 0
+    permissions: 0
+    tagCount: 0
+    size: 1
+    choiceCount: 0
+    hasMin: 0
+    hasMax: 0
+    hasUIMin: 0
+    hasUIMax: 0
+    min: 0
+    max: 10
+    UIMin: 0
+    UIMax: 10
+    invisible: 1
+    disabled: 0
+    spare: 0
+    joinNext: 0
+    labelNone: 0
+    intValuesIndex: -1
+    floatValuesIndex: -1
+    stringValuesIndex: 8
+    choiceIndex: 31
+    isChildOfMultiParm: 0
+    instanceNum: -1
+    instanceLength: 0
+    instanceCount: 0
+    instanceStartOffset: -1
+    rampType: -1
+  - id: 29
+    parentId: 2
+    childIndex: 4
+    type: 2
+    typeInfoSH: 0
+    permissions: 0
+    tagCount: 0
+    size: 1
+    choiceCount: 2
+    hasMin: 0
+    hasMax: 0
+    hasUIMin: 0
+    hasUIMax: 0
+    min: 0
+    max: 10
+    UIMin: 0
+    UIMax: 10
+    invisible: 0
+    disabled: 0
+    spare: 0
+    joinNext: 1
+    labelNone: 1
+    intValuesIndex: 8
+    floatValuesIndex: -1
+    stringValuesIndex: -1
+    choiceIndex: 31
+    isChildOfMultiParm: 0
+    instanceNum: -1
+    instanceLength: 0
+    instanceCount: 0
+    instanceStartOffset: -1
+    rampType: -1
+  - id: 30
+    parentId: 2
+    childIndex: 5
+    type: 0
+    typeInfoSH: 0
+    permissions: 0
+    tagCount: 0
+    size: 1
+    choiceCount: 0
+    hasMin: 1
+    hasMax: 1
+    hasUIMin: 1
+    hasUIMax: 1
+    min: 0
+    max: 1
+    UIMin: 0
+    UIMax: 1
+    invisible: 0
+    disabled: 1
+    spare: 0
+    joinNext: 0
+    labelNone: 0
+    intValuesIndex: 9
+    floatValuesIndex: -1
+    stringValuesIndex: -1
+    choiceIndex: 33
+    isChildOfMultiParm: 0
+    instanceNum: -1
+    instanceLength: 0
+    instanceCount: 0
+    instanceStartOffset: -1
+    rampType: -1
+  - id: 31
+    parentId: 2
+    childIndex: 6
+    type: 6
+    typeInfoSH: 0
+    permissions: 0
+    tagCount: 0
+    size: 1
+    choiceCount: 7
+    hasMin: 0
+    hasMax: 0
+    hasUIMin: 0
+    hasUIMax: 0
+    min: 0
+    max: 10
+    UIMin: 0
+    UIMax: 10
+    invisible: 0
+    disabled: 0
+    spare: 0
+    joinNext: 0
+    labelNone: 0
+    intValuesIndex: -1
+    floatValuesIndex: -1
+    stringValuesIndex: 9
+    choiceIndex: 33
+    isChildOfMultiParm: 0
+    instanceNum: -1
+    instanceLength: 0
+    instanceCount: 0
+    instanceStartOffset: -1
+    rampType: -1
+  - id: 32
+    parentId: 2
+    childIndex: 7
+    type: 6
+    typeInfoSH: 0
+    permissions: 0
+    tagCount: 2
+    size: 1
+    choiceCount: 0
+    hasMin: 0
+    hasMax: 0
+    hasUIMin: 0
+    hasUIMax: 0
+    min: 0
+    max: 10
+    UIMin: 0
+    UIMax: 10
+    invisible: 0
+    disabled: 0
+    spare: 0
+    joinNext: 0
+    labelNone: 0
+    intValuesIndex: -1
+    floatValuesIndex: -1
+    stringValuesIndex: 10
+    choiceIndex: 40
+    isChildOfMultiParm: 0
+    instanceNum: -1
+    instanceLength: 0
+    instanceCount: 0
+    instanceStartOffset: -1
+    rampType: -1
+  - id: 33
+    parentId: 2
+    childIndex: 8
+    type: 2
+    typeInfoSH: 0
+    permissions: 0
+    tagCount: 0
+    size: 1
+    choiceCount: 2
+    hasMin: 0
+    hasMax: 0
+    hasUIMin: 0
+    hasUIMax: 0
+    min: 0
+    max: 10
+    UIMin: 0
+    UIMax: 10
+    invisible: 0
+    disabled: 0
+    spare: 0
+    joinNext: 0
+    labelNone: 0
+    intValuesIndex: 10
+    floatValuesIndex: -1
+    stringValuesIndex: -1
+    choiceIndex: 40
+    isChildOfMultiParm: 0
+    instanceNum: -1
+    instanceLength: 0
+    instanceCount: 0
+    instanceStartOffset: -1
+    rampType: -1
+  - id: 34
+    parentId: 2
+    childIndex: 9
+    type: 7
+    typeInfoSH: 721
+    permissions: 2
+    tagCount: 1
+    size: 1
+    choiceCount: 0
+    hasMin: 0
+    hasMax: 0
+    hasUIMin: 0
+    hasUIMax: 0
+    min: 0
+    max: 10
+    UIMin: 0
+    UIMax: 10
+    invisible: 0
+    disabled: 0
+    spare: 0
+    joinNext: 0
+    labelNone: 0
+    intValuesIndex: -1
+    floatValuesIndex: -1
+    stringValuesIndex: 11
+    choiceIndex: 42
+    isChildOfMultiParm: 0
+    instanceNum: -1
+    instanceLength: 0
+    instanceCount: 0
+    instanceStartOffset: -1
+    rampType: -1
+  - id: 35
+    parentId: 2
+    childIndex: 10
+    type: 2
+    typeInfoSH: 0
+    permissions: 0
+    tagCount: 0
+    size: 1
+    choiceCount: 2
+    hasMin: 0
+    hasMax: 0
+    hasUIMin: 0
+    hasUIMax: 0
+    min: 0
+    max: 10
+    UIMin: 0
+    UIMax: 10
+    invisible: 0
+    disabled: 0
+    spare: 0
+    joinNext: 0
+    labelNone: 0
+    intValuesIndex: 11
+    floatValuesIndex: -1
+    stringValuesIndex: -1
+    choiceIndex: 42
+    isChildOfMultiParm: 0
+    instanceNum: -1
+    instanceLength: 0
+    instanceCount: 0
+    instanceStartOffset: -1
+    rampType: -1
+  - id: 36
+    parentId: 2
+    childIndex: 11
+    type: 2
+    typeInfoSH: 0
+    permissions: 0
+    tagCount: 0
+    size: 1
+    choiceCount: 2
+    hasMin: 0
+    hasMax: 0
+    hasUIMin: 0
+    hasUIMax: 0
+    min: 0
+    max: 10
+    UIMin: 0
+    UIMax: 10
+    invisible: 1
+    disabled: 0
+    spare: 0
+    joinNext: 0
+    labelNone: 0
+    intValuesIndex: 12
+    floatValuesIndex: -1
+    stringValuesIndex: -1
+    choiceIndex: 44
+    isChildOfMultiParm: 0
+    instanceNum: -1
+    instanceLength: 0
+    instanceCount: 0
+    instanceStartOffset: -1
+    rampType: -1
+  - id: 37
+    parentId: 2
+    childIndex: 12
+    type: 5
+    typeInfoSH: 0
+    permissions: 0
+    tagCount: 0
+    size: 3
+    choiceCount: 0
+    hasMin: 1
+    hasMax: 1
+    hasUIMin: 1
+    hasUIMax: 1
+    min: 0
+    max: 1
+    UIMin: 0
+    UIMax: 1
+    invisible: 1
+    disabled: 0
+    spare: 0
+    joinNext: 0
+    labelNone: 0
+    intValuesIndex: -1
+    floatValuesIndex: 19
+    stringValuesIndex: -1
+    choiceIndex: 46
+    isChildOfMultiParm: 0
+    instanceNum: -1
+    instanceLength: 0
+    instanceCount: 0
+    instanceStartOffset: -1
+    rampType: -1
+  - id: 38
+    parentId: -1
+    childIndex: 36
+    type: 4
+    typeInfoSH: 0
+    permissions: 0
+    tagCount: 1
+    size: 1
+    choiceCount: 0
+    hasMin: 0
+    hasMax: 0
+    hasUIMin: 1
+    hasUIMax: 1
+    min: 0
+    max: 10
+    UIMin: 0
+    UIMax: 10
+    invisible: 0
+    disabled: 0
+    spare: 0
+    joinNext: 0
+    labelNone: 0
+    intValuesIndex: -1
+    floatValuesIndex: 22
+    stringValuesIndex: -1
+    choiceIndex: 46
+    isChildOfMultiParm: 0
+    instanceNum: -1
+    instanceLength: 0
+    instanceCount: 0
+    instanceStartOffset: -1
+    rampType: -1
+  - id: 39
+    parentId: -1
+    childIndex: 37
+    type: 0
+    typeInfoSH: 0
+    permissions: 0
+    tagCount: 1
+    size: 1
+    choiceCount: 0
+    hasMin: 1
+    hasMax: 0
+    hasUIMin: 1
+    hasUIMax: 1
+    min: 1
+    max: 10
+    UIMin: 1
+    UIMax: 10
+    invisible: 0
+    disabled: 0
+    spare: 0
+    joinNext: 0
+    labelNone: 0
+    intValuesIndex: 13
+    floatValuesIndex: -1
+    stringValuesIndex: -1
+    choiceIndex: 46
+    isChildOfMultiParm: 0
+    instanceNum: -1
+    instanceLength: 0
+    instanceCount: 0
+    instanceStartOffset: -1
+    rampType: -1
+  - id: 40
+    parentId: -1
+    childIndex: 38
+    type: 4
+    typeInfoSH: 0
+    permissions: 0
+    tagCount: 3
+    size: 1
+    choiceCount: 0
+    hasMin: 0
+    hasMax: 0
+    hasUIMin: 1
+    hasUIMax: 1
+    min: 0
+    max: 4
+    UIMin: 0
+    UIMax: 4
+    invisible: 0
+    disabled: 0
+    spare: 0
+    joinNext: 0
+    labelNone: 0
+    intValuesIndex: -1
+    floatValuesIndex: 23
+    stringValuesIndex: -1
+    choiceIndex: 46
+    isChildOfMultiParm: 0
+    instanceNum: -1
+    instanceLength: 0
+    instanceCount: 0
+    instanceStartOffset: -1
+    rampType: -1
+  - id: 41
+    parentId: -1
+    childIndex: 39
+    type: 4
+    typeInfoSH: 0
+    permissions: 0
+    tagCount: 3
+    size: 1
+    choiceCount: 0
+    hasMin: 0
+    hasMax: 0
+    hasUIMin: 1
+    hasUIMax: 1
+    min: 0
+    max: 1
+    UIMin: 0
+    UIMax: 1
+    invisible: 0
+    disabled: 0
+    spare: 0
+    joinNext: 0
+    labelNone: 0
+    intValuesIndex: -1
+    floatValuesIndex: 24
+    stringValuesIndex: -1
+    choiceIndex: 46
+    isChildOfMultiParm: 0
+    instanceNum: -1
+    instanceLength: 0
+    instanceCount: 0
+    instanceStartOffset: -1
+    rampType: -1
+  myParmIntValues: 0000000000000000000000000000000000000000000000000100000001000000000000000100000001000000010000000100000002000000
+  myParmFloatValues:
+  - -1.0897667
+  - 0
+  - 0.6330466
+  - 0
+  - -0
+  - 0
+  - 1
+  - 1
+  - 1
+  - 0
+  - 0
+  - 0
+  - 1
+  - 0
+  - 0
+  - 0
+  - 1
+  - 0
+  - 0
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1.841
+  - 0.5
+  myParmStringHandles: 95030000ba030000ab0300006c030000d3030000d4030000d1030000d2030000d7030000d8030000d5030000d6030000
+  myParmChoiceLists:
+  - parentParmId: 3
+  - parentParmId: 3
+  - parentParmId: 3
+  - parentParmId: 3
+  - parentParmId: 3
+  - parentParmId: 3
+  - parentParmId: 4
+  - parentParmId: 4
+  - parentParmId: 4
+  - parentParmId: 4
+  - parentParmId: 4
+  - parentParmId: 4
+  - parentParmId: 10
+  - parentParmId: 10
+  - parentParmId: 10
+  - parentParmId: 10
+  - parentParmId: 10
+  - parentParmId: 10
+  - parentParmId: 11
+  - parentParmId: 11
+  - parentParmId: 12
+  - parentParmId: 12
+  - parentParmId: 13
+  - parentParmId: 13
+  - parentParmId: 17
+  - parentParmId: 17
+  - parentParmId: 17
+  - parentParmId: 17
+  - parentParmId: 17
+  - parentParmId: 21
+  - parentParmId: 21
+  - parentParmId: 29
+  - parentParmId: 29
+  - parentParmId: 31
+  - parentParmId: 31
+  - parentParmId: 31
+  - parentParmId: 31
+  - parentParmId: 31
+  - parentParmId: 31
+  - parentParmId: 31
+  - parentParmId: 33
+  - parentParmId: 33
+  - parentParmId: 35
+  - parentParmId: 35
+  - parentParmId: 36
+  - parentParmId: 36
+  myParmInfoStrings:
+  - typeInfo: 
+    name: stdswitcher3
+    label: 
+    templateName: 
+    help: 
+  - typeInfo: 
+    name: stdswitcher3_0
+    label: Transform
+    templateName: stdswitcher3_0
+    help: 
+  - typeInfo: 
+    name: stdswitcher3_1
+    label: Subnet
+    templateName: stdswitcher3_1
+    help: 
+  - typeInfo: 
+    name: xOrd
+    label: Transform Order
+    templateName: xOrd
+    help: 
+  - typeInfo: 
+    name: rOrd
+    label: Rotate Order
+    templateName: rOrd
+    help: 
+  - typeInfo: 
+    name: t
+    label: Translate
+    templateName: t
+    help: 
+  - typeInfo: 
+    name: r
+    label: Rotate
+    templateName: r
+    help: 
+  - typeInfo: 
+    name: s
+    label: Scale
+    templateName: s
+    help: 
+  - typeInfo: 
+    name: p
+    label: Pivot
+    templateName: p
+    help: 
+  - typeInfo: 
+    name: scale
+    label: Uniform Scale
+    templateName: scale
+    help: 
+  - typeInfo: 
+    name: pre_xform
+    label: Modify Pre-Transform
+    templateName: pre_xform
+    help: 
+  - typeInfo: 
+    name: keeppos
+    label: Keep Position When Parenting
+    templateName: keeppos
+    help: 
+  - typeInfo: 
+    name: childcomp
+    label: Child Compensation
+    templateName: childcomp
+    help: 
+  - typeInfo: 
+    name: constraints_on
+    label: Enable Constraints
+    templateName: constraints_on
+    help: 
+  - typeInfo: 
+    name: constraints_path
+    label: Constraints
+    templateName: constraints_path
+    help: 
+  - typeInfo: 
+    name: lookatpath
+    label: Look At
+    templateName: lookatpath
+    help: 
+  - typeInfo: 
+    name: lookupobjpath
+    label: Look Up Object
+    templateName: lookupobjpath
+    help: 
+  - typeInfo: 
+    name: lookup
+    label: Look At Up Vector
+    templateName: lookup
+    help: 
+  - typeInfo: 
+    name: pathobjpath
+    label: Path Object
+    templateName: pathobjpath
+    help: 
+  - typeInfo: 
+    name: roll
+    label: Roll
+    templateName: roll
+    help: 
+  - typeInfo: 
+    name: pos
+    label: Position
+    templateName: pos
+    help: 
+  - typeInfo: 
+    name: uparmtype
+    label: Parameterization
+    templateName: uparmtype
+    help: 
+  - typeInfo: 
+    name: pathorient
+    label: Orient Along Path
+    templateName: pathorient
+    help: 
+  - typeInfo: 
+    name: up
+    label: Orient Up Vector
+    templateName: up
+    help: 
+  - typeInfo: 
+    name: bank
+    label: Auto-Bank factor
+    templateName: bank
+    help: 
+  - typeInfo: 
+    name: label1
+    label: 'Input #1 Label'
+    templateName: label1
+    help: 
+  - typeInfo: 
+    name: label2
+    label: 'Input #2 Label'
+    templateName: label2
+    help: 
+  - typeInfo: 
+    name: label3
+    label: 'Input #3 Label'
+    templateName: label3
+    help: 
+  - typeInfo: 
+    name: label4
+    label: 'Input #4 Label'
+    templateName: label4
+    help: 
+  - typeInfo: 
+    name: tdisplay
+    label: Display
+    templateName: tdisplay
+    help: 
+  - typeInfo: 
+    name: display
+    label: Display
+    templateName: display
+    help: 
+  - typeInfo: 
+    name: outputobj
+    label: Output Transform
+    templateName: outputobj
+    help: 
+  - typeInfo: 
+    name: visibleobjects
+    label: Visible Children
+    templateName: visibleobjects
+    help: 
+  - typeInfo: 
+    name: picking
+    label: Viewport Selecting Enabled
+    templateName: picking
+    help: 
+  - typeInfo: 
+    name: pickscript
+    label: Select Script
+    templateName: pickscript
+    help: 
+  - typeInfo: 
+    name: caching
+    label: Cache Object Transform
+    templateName: caching
+    help: 
+  - typeInfo: 
+    name: use_dcolor
+    label: Set Wireframe Color
+    templateName: use_dcolor
+    help: 
+  - typeInfo: 
+    name: dcolor
+    label: Wireframe Color
+    templateName: dcolor
+    help: 
+  - typeInfo: 
+    name: scale2
+    label: Uniform Scale
+    templateName: scale2
+    help: 
+  - typeInfo: 
+    name: freq
+    label: Frequency
+    templateName: freq
+    help: 
+  - typeInfo: 
+    name: lac
+    label: Lacunarity
+    templateName: lac
+    help: 
+  - typeInfo: 
+    name: rough
+    label: Roughness
+    templateName: rough
+    help: 
+  myParmInputs:
+  - isAsset: 0
+    inputObject: {fileID: 0}
+    newInputObject: {fileID: 0}
+    inputNodeId: 0
+    inputNodeUniqueId: 0
+  - isAsset: 0
+    inputObject: {fileID: 0}
+    newInputObject: {fileID: 0}
+    inputNodeId: 0
+    inputNodeUniqueId: 0
+  - isAsset: 0
+    inputObject: {fileID: 0}
+    newInputObject: {fileID: 0}
+    inputNodeId: 0
+    inputNodeUniqueId: 0
+  - isAsset: 0
+    inputObject: {fileID: 0}
+    newInputObject: {fileID: 0}
+    inputNodeId: 0
+    inputNodeUniqueId: 0
+  - isAsset: 0
+    inputObject: {fileID: 0}
+    newInputObject: {fileID: 0}
+    inputNodeId: 0
+    inputNodeUniqueId: 0
+  - isAsset: 0
+    inputObject: {fileID: 0}
+    newInputObject: {fileID: 0}
+    inputNodeId: 0
+    inputNodeUniqueId: 0
+  - isAsset: 0
+    inputObject: {fileID: 0}
+    newInputObject: {fileID: 0}
+    inputNodeId: 0
+    inputNodeUniqueId: 0
+  - isAsset: 0
+    inputObject: {fileID: 0}
+    newInputObject: {fileID: 0}
+    inputNodeId: 0
+    inputNodeUniqueId: 0
+  - isAsset: 0
+    inputObject: {fileID: 0}
+    newInputObject: {fileID: 0}
+    inputNodeId: 0
+    inputNodeUniqueId: 0
+  - isAsset: 0
+    inputObject: {fileID: 0}
+    newInputObject: {fileID: 0}
+    inputNodeId: 0
+    inputNodeUniqueId: 0
+  - isAsset: 0
+    inputObject: {fileID: 0}
+    newInputObject: {fileID: 0}
+    inputNodeId: 0
+    inputNodeUniqueId: 0
+  - isAsset: 0
+    inputObject: {fileID: 0}
+    newInputObject: {fileID: 0}
+    inputNodeId: 0
+    inputNodeUniqueId: 0
+  - isAsset: 0
+    inputObject: {fileID: 0}
+    newInputObject: {fileID: 0}
+    inputNodeId: 0
+    inputNodeUniqueId: 0
+  - isAsset: 0
+    inputObject: {fileID: 0}
+    newInputObject: {fileID: 0}
+    inputNodeId: 0
+    inputNodeUniqueId: 0
+  - isAsset: 0
+    inputObject: {fileID: 0}
+    newInputObject: {fileID: 0}
+    inputNodeId: 0
+    inputNodeUniqueId: 0
+  - isAsset: 0
+    inputObject: {fileID: 0}
+    newInputObject: {fileID: 0}
+    inputNodeId: 0
+    inputNodeUniqueId: 0
+  - isAsset: 0
+    inputObject: {fileID: 0}
+    newInputObject: {fileID: 0}
+    inputNodeId: 0
+    inputNodeUniqueId: 0
+  - isAsset: 0
+    inputObject: {fileID: 0}
+    newInputObject: {fileID: 0}
+    inputNodeId: 0
+    inputNodeUniqueId: 0
+  - isAsset: 0
+    inputObject: {fileID: 0}
+    newInputObject: {fileID: 0}
+    inputNodeId: 0
+    inputNodeUniqueId: 0
+  - isAsset: 0
+    inputObject: {fileID: 0}
+    newInputObject: {fileID: 0}
+    inputNodeId: 0
+    inputNodeUniqueId: 0
+  - isAsset: 0
+    inputObject: {fileID: 0}
+    newInputObject: {fileID: 0}
+    inputNodeId: 0
+    inputNodeUniqueId: 0
+  - isAsset: 0
+    inputObject: {fileID: 0}
+    newInputObject: {fileID: 0}
+    inputNodeId: 0
+    inputNodeUniqueId: 0
+  - isAsset: 0
+    inputObject: {fileID: 0}
+    newInputObject: {fileID: 0}
+    inputNodeId: 0
+    inputNodeUniqueId: 0
+  - isAsset: 0
+    inputObject: {fileID: 0}
+    newInputObject: {fileID: 0}
+    inputNodeId: 0
+    inputNodeUniqueId: 0
+  - isAsset: 0
+    inputObject: {fileID: 0}
+    newInputObject: {fileID: 0}
+    inputNodeId: 0
+    inputNodeUniqueId: 0
+  - isAsset: 0
+    inputObject: {fileID: 0}
+    newInputObject: {fileID: 0}
+    inputNodeId: 0
+    inputNodeUniqueId: 0
+  - isAsset: 0
+    inputObject: {fileID: 0}
+    newInputObject: {fileID: 0}
+    inputNodeId: 0
+    inputNodeUniqueId: 0
+  - isAsset: 0
+    inputObject: {fileID: 0}
+    newInputObject: {fileID: 0}
+    inputNodeId: 0
+    inputNodeUniqueId: 0
+  - isAsset: 0
+    inputObject: {fileID: 0}
+    newInputObject: {fileID: 0}
+    inputNodeId: 0
+    inputNodeUniqueId: 0
+  - isAsset: 0
+    inputObject: {fileID: 0}
+    newInputObject: {fileID: 0}
+    inputNodeId: 0
+    inputNodeUniqueId: 0
+  - isAsset: 0
+    inputObject: {fileID: 0}
+    newInputObject: {fileID: 0}
+    inputNodeId: 0
+    inputNodeUniqueId: 0
+  - isAsset: 0
+    inputObject: {fileID: 0}
+    newInputObject: {fileID: 0}
+    inputNodeId: 0
+    inputNodeUniqueId: 0
+  - isAsset: 0
+    inputObject: {fileID: 0}
+    newInputObject: {fileID: 0}
+    inputNodeId: 0
+    inputNodeUniqueId: 0
+  - isAsset: 0
+    inputObject: {fileID: 0}
+    newInputObject: {fileID: 0}
+    inputNodeId: 0
+    inputNodeUniqueId: 0
+  - isAsset: 0
+    inputObject: {fileID: 0}
+    newInputObject: {fileID: 0}
+    inputNodeId: 0
+    inputNodeUniqueId: 0
+  - isAsset: 0
+    inputObject: {fileID: 0}
+    newInputObject: {fileID: 0}
+    inputNodeId: 0
+    inputNodeUniqueId: 0
+  - isAsset: 0
+    inputObject: {fileID: 0}
+    newInputObject: {fileID: 0}
+    inputNodeId: 0
+    inputNodeUniqueId: 0
+  - isAsset: 0
+    inputObject: {fileID: 0}
+    newInputObject: {fileID: 0}
+    inputNodeId: 0
+    inputNodeUniqueId: 0
+  - isAsset: 0
+    inputObject: {fileID: 0}
+    newInputObject: {fileID: 0}
+    inputNodeId: 0
+    inputNodeUniqueId: 0
+  - isAsset: 0
+    inputObject: {fileID: 0}
+    newInputObject: {fileID: 0}
+    inputNodeId: 0
+    inputNodeUniqueId: 0
+  - isAsset: 0
+    inputObject: {fileID: 0}
+    newInputObject: {fileID: 0}
+    inputNodeId: 0
+    inputNodeUniqueId: 0
+  - isAsset: 0
+    inputObject: {fileID: 0}
+    newInputObject: {fileID: 0}
+    inputNodeId: 0
+    inputNodeUniqueId: 0
+  myParmChoiceInfoStrings:
+  - label: Scale Rot Trans
+    value: srt
+  - label: Scale Trans Rot
+    value: str
+  - label: Rot Scale Trans
+    value: rst
+  - label: Rot Trans Scale
+    value: rts
+  - label: Trans Scale Rot
+    value: tsr
+  - label: Trans Rot Scale
+    value: trs
+  - label: Rx Ry Rz
+    value: xyz
+  - label: Rx Rz Ry
+    value: xzy
+  - label: Ry Rx Rz
+    value: yxz
+  - label: Ry Rz Rx
+    value: yzx
+  - label: Rz Rx Ry
+    value: zxy
+  - label: Rz Ry Rx
+    value: zyx
+  - label: Clean Transform
+    value: clean
+  - label: Clean Translates
+    value: cleantrans
+  - label: Clean Rotates
+    value: cleanrot
+  - label: Clean Scales
+    value: cleanscales
+  - label: Extract Pre-transform
+    value: extract
+  - label: Reset Pre-transform
+    value: reset
+  - label: off
+    value: off
+  - label: on
+    value: on
+  - label: off
+    value: off
+  - label: on
+    value: on
+  - label: off
+    value: off
+  - label: on
+    value: on
+  - label: Don't Use Up Vector
+    value: off
+  - label: Use Up Vector
+    value: on
+  - label: Use Quaternions
+    value: quat
+  - label: Use Global Position
+    value: pos
+  - label: Use Up Object
+    value: obj
+  - label: Uniform
+    value: uniform
+  - label: Arc Length
+    value: arc
+  - label: off
+    value: off
+  - label: on
+    value: on
+  - label: No Object
+    value: 
+  - label: Input Object 1
+    value: _input1_obj_
+  - label: Input Object 2
+    value: _input2_obj_
+  - label: Input Object 3
+    value: _input3_obj_
+  - label: Input Object 4
+    value: _input4_obj_
+  - label: _separator_
+    value: _separator_
+  - label: sphere_object1
+    value: sphere_object1
+  - label: off
+    value: off
+  - label: on
+    value: on
+  - label: off
+    value: off
+  - label: on
+    value: on
+  - label: off
+    value: off
+  - label: on
+    value: on
+  myParmStringValues:
+  - 
+  - 
+  - 
+  - on
+  - 
+  - 'Sub-Network Input #1'
+  - 'Sub-Network Input #2'
+  - 'Sub-Network Input #3'
+  - 'Sub-Network Input #4'
+  - _input1_obj_
+  - '*'
+  - 
+  myLastChangedParmId: -1
+  myParmsUndoInfo: {fileID: 1421828518}
+  myFolderListSelections: 0000000000000000
+  myFolderListSelectionIds: ffffffffffffffff
+--- !u!114 &1577221647
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1577221645}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f0b6aed776866648abb28f3e8379991, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myAssetId: 5
+  myNodeId: 5
+  myObjectNodeId: 5
+  myAsset: {fileID: 1577221647}
+  myObjectId: -1
+  myObjectName: object_name
+  myObjectVisible: 0
+  myObjectInfo:
+    hasTransformChanged: 0
+    haveGeosChanged: 0
+    isVisible: 0
+    isInstancer: 0
+    isInstanced: 0
+    geoCount: 0
+    nodeId: -1
+    objectToInstanceId: 0
+  myGeos: []
+  myNodeInfo:
+    id: 5
+    parentId: 2
+    nameSH: 504
+    type: 1
+    isValid: 1
+    totalCookCount: 1
+    uniqueHoudiniNodeId: 78
+    parmCount: 42
+    parmIntValueCount: 14
+    parmFloatValueCount: 25
+    parmStringValueCount: 12
+    parmChoiceCount: 46
+    childNodeCount: 1
+    inputCount: 0
+    createdPostAssetLoad: 1
+  myPreset: 235053495f5052455345540a76657273696f6e20322e30610a6f7076616c7565730a7b0a76657273696f6e20302e380a7374647377697463686572095b2030096c6f636b733d30205d09280930093009290a784f7264095b2030096c6f636b733d30205d092809227372742209290a724f7264095b2030096c6f636b733d30205d0928092278797a2209290a74095b2030096c6f636b733d30205d0928092d312e30383937363637343037393839353032093009302e363333303436363237303434363737373309290a72095b2030096c6f636b733d30205d09280930092d30093009290a73095b2030096c6f636b733d30205d092809310931093109290a70095b2030096c6f636b733d30205d092809300930093009290a7363616c65095b2030096c6f636b733d30205d0928093109290a7072655f78666f726d095b2030096c6f636b733d30205d0928093009290a6b656570706f73095b2030096c6f636b733d30205d092809226f66662209290a6368696c64636f6d70095b2030096c6f636b733d30205d092809226f66662209290a636f6e73747261696e74735f6f6e095b2030096c6f636b733d30205d092809226f66662209290a636f6e73747261696e74735f70617468095b2030096c6f636b733d30205d092809222209290a6c6f6f6b617470617468095b2030096c6f636b733d30205d092809222209290a6c6f6f6b75706f626a70617468095b2030096c6f636b733d30205d092809222209290a6c6f6f6b7570095b2030096c6f636b733d30205d0928096f6e09290a706174686f626a70617468095b2030096c6f636b733d30205d092809222209290a726f6c6c095b2030096c6f636b733d30205d0928093009290a706f73095b2030096c6f636b733d30205d0928093009290a757061726d74797065095b2030096c6f636b733d30205d092809226172632209290a706174686f7269656e74095b2030096c6f636b733d30205d0928093109290a7570095b2030096c6f636b733d30205d092809300931093009290a62616e6b095b2030096c6f636b733d30205d0928093009290a6c6162656c31095b2030096c6f636b733d30205d092809225375622d4e6574776f726b20496e7075742023312209290a6c6162656c32095b2030096c6f636b733d30205d092809225375622d4e6574776f726b20496e7075742023322209290a6c6162656c33095b2030096c6f636b733d30205d092809225375622d4e6574776f726b20496e7075742023332209290a6c6162656c34095b2030096c6f636b733d30205d092809225375622d4e6574776f726b20496e7075742023342209290a74646973706c6179095b2030096c6f636b733d30205d092809226f66662209290a646973706c6179095b2030096c6f636b733d30205d0928093109290a6f75747075746f626a095b2030096c6f636b733d30205d0928095f696e707574315f6f626a5f09290a76697369626c656f626a65637473095b2030096c6f636b733d30205d0928092a09290a7069636b696e67095b2030096c6f636b733d30205d092809226f6e2209290a7069636b736372697074095b2030096c6f636b733d30205d092809222209290a63616368696e67095b2030096c6f636b733d30205d092809226f6e2209290a7573655f64636f6c6f72095b2030096c6f636b733d30205d092809226f6e2209290a64636f6c6f72095b2030096c6f636b733d30205d092809310931093109290a737464737769746368657233095b2030096c6f636b733d30205d09280930093009290a7363616c6532095b2030096c6f636b733d30205d0928093109290a66726571095b2030096c6f636b733d30205d0928093209290a6c6163095b2030096c6f636b733d30205d092809312e38343109290a726f756768095b2030096c6f636b733d30205d092809302e3509290a7d0a
+  myAssetValidationId: 78
+  myAssetName: rock2
+  myAssetOpName: Object/rock
+  myAssetHelp: 
+  myAssetType: 0
+  myTransformInputCount: 0
+  myGeoInputCount: 0
+  myGeoInputsTransformTypes: 
+  myDownStreamTransformAssets: []
+  myUpStreamTransformAssets: []
+  myUpStreamTransformObjects: []
+  myUpStreamGeoAssets: []
+  myUpStreamGeoObjects: []
+  myUpStreamGeoInputAssetIds: 
+  myUpStreamGeoInputAssetValidationIds: 
+  myDownStreamAssets: []
+  myPresetsMap: {fileID: 0}
+  myObjectCount: 1
+  myHandleCount: 0
+  myGameObjects:
+  - {fileID: 905427721}
+  myGeoAttributeManagerMap: {fileID: 0}
+  myBakeStartTime: 0
+  myBakeEndTime: 1
+  myBakeSamplesPerSecond: 30
+  myShowHoudiniControls: 1
+  myShowCookLog: 0
+  myShowHelp: 0
+  myShowAssetSettings: 1
+  myShowBakeOptions: 0
+  myShowPaintTools: 0
+  myShowInputControls: 1
+  myAssetOptionsCategory: 0
+  myIsGeoVisible: 1
+  myShowPinnedInstances: 1
+  myShowOnlyVertexColours: 0
+  myGenerateUVs: 0
+  myGenerateLightmapUV2s: 0
+  myGenerateTangents: 1
+  myEnableCooking: 1
+  myCookingTriggersDownCooks: 1
+  myPlaymodePerFrameCooking: 0
+  myPushUnityTransformToHoudini: 1
+  myTransformChangeTriggersCooks: 0
+  myImportTemplatedGeos: 0
+  mySplitGeosByGroupOverride: 0
+  mySplitGeosByGroup: 1
+  mySplitPointsByVertexAttributesOverride: 0
+  mySplitPointsByVertexAttributes: 1
+  myOmitPartNameEnumeration: 0
+  myEnableLogging: 0
+  myTransInputNames: []
+  myGeoInputNames: []
+  myLastLocalToWorld:
+    e00: 1
+    e01: 0
+    e02: 0
+    e03: 1.0897667
+    e10: 0
+    e11: 1
+    e12: 0
+    e13: 0
+    e20: 0
+    e21: 0
+    e22: 1
+    e23: 0.6330466
+    e30: 0
+    e31: 0
+    e32: 0
+    e33: 1
+  myAssetOTLUndoInfo: {fileID: 757090889}
+  myAssetPath: Assets/rock.hdanc
+  myActiveAttributeManager: {fileID: 0}
+  myEditPaintGeos: []
+  myHandleInfos: []
+--- !u!4 &1577221648
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1577221645}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.0897667, y: 0, z: 0.6330466}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 905427723}
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1627627257
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1627627260}
+  - component: {fileID: 1627627259}
+  - component: {fileID: 1627627258}
+  m_Layer: 0
+  m_Name: rock1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1627627258
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1627627257}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d50d11faa64faa243b8964c758f67fa5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myControl: {fileID: 1627627259}
+  myEditable: 1
+  myParmCount: 42
+  myParmIntValueCount: 14
+  myParmFloatValueCount: 25
+  myprParmStringValueCoun: 12
+  myprParmChoiceCount: 46
+  myParms:
+  - id: 0
+    parentId: -1
+    childIndex: 0
+    type: 11
+    typeInfoSH: 0
+    permissions: 0
+    tagCount: 0
+    size: 2
+    choiceCount: 0
+    hasMin: 0
+    hasMax: 0
+    hasUIMin: 0
+    hasUIMax: 0
+    min: 0
+    max: 10
+    UIMin: 0
+    UIMax: 10
+    invisible: 0
+    disabled: 0
+    spare: 0
+    joinNext: 0
+    labelNone: 0
+    intValuesIndex: -1
+    floatValuesIndex: -1
+    stringValuesIndex: -1
+    choiceIndex: -1
+    isChildOfMultiParm: 0
+    instanceNum: -1
+    instanceLength: 0
+    instanceCount: 0
+    instanceStartOffset: -1
+    rampType: -1
+  - id: 1
+    parentId: -1
+    childIndex: 1
+    type: 13
+    typeInfoSH: 0
+    permissions: 0
+    tagCount: 0
+    size: 22
+    choiceCount: 0
+    hasMin: 0
+    hasMax: 0
+    hasUIMin: 0
+    hasUIMax: 0
+    min: 0
+    max: 10
+    UIMin: 0
+    UIMax: 10
+    invisible: 0
+    disabled: 0
+    spare: 0
+    joinNext: 0
+    labelNone: 0
+    intValuesIndex: -1
+    floatValuesIndex: -1
+    stringValuesIndex: -1
+    choiceIndex: -1
+    isChildOfMultiParm: 0
+    instanceNum: -1
+    instanceLength: 0
+    instanceCount: 0
+    instanceStartOffset: -1
+    rampType: -1
+  - id: 2
+    parentId: -1
+    childIndex: 2
+    type: 13
+    typeInfoSH: 0
+    permissions: 0
+    tagCount: 0
+    size: 13
+    choiceCount: 0
+    hasMin: 0
+    hasMax: 0
+    hasUIMin: 0
+    hasUIMax: 0
+    min: 0
+    max: 10
+    UIMin: 0
+    UIMax: 10
+    invisible: 0
+    disabled: 0
+    spare: 0
+    joinNext: 0
+    labelNone: 0
+    intValuesIndex: -1
+    floatValuesIndex: -1
+    stringValuesIndex: -1
+    choiceIndex: -1
+    isChildOfMultiParm: 0
+    instanceNum: -1
+    instanceLength: 0
+    instanceCount: 0
+    instanceStartOffset: -1
+    rampType: -1
+  - id: 3
+    parentId: 1
+    childIndex: 0
+    type: 0
+    typeInfoSH: 0
+    permissions: 0
+    tagCount: 0
+    size: 1
+    choiceCount: 6
+    hasMin: 0
+    hasMax: 0
+    hasUIMin: 0
+    hasUIMax: 0
+    min: 0
+    max: 10
+    UIMin: 0
+    UIMax: 10
+    invisible: 0
+    disabled: 0
+    spare: 0
+    joinNext: 1
+    labelNone: 0
+    intValuesIndex: 0
+    floatValuesIndex: -1
+    stringValuesIndex: -1
+    choiceIndex: 0
+    isChildOfMultiParm: 0
+    instanceNum: -1
+    instanceLength: 0
+    instanceCount: 0
+    instanceStartOffset: -1
+    rampType: -1
+  - id: 4
+    parentId: 1
+    childIndex: 1
+    type: 0
+    typeInfoSH: 0
+    permissions: 0
+    tagCount: 0
+    size: 1
+    choiceCount: 6
+    hasMin: 0
+    hasMax: 0
+    hasUIMin: 0
+    hasUIMax: 0
+    min: 0
+    max: 10
+    UIMin: 0
+    UIMax: 10
+    invisible: 0
+    disabled: 0
+    spare: 0
+    joinNext: 0
+    labelNone: 0
+    intValuesIndex: 1
+    floatValuesIndex: -1
+    stringValuesIndex: -1
+    choiceIndex: 6
+    isChildOfMultiParm: 0
+    instanceNum: -1
+    instanceLength: 0
+    instanceCount: 0
+    instanceStartOffset: -1
+    rampType: -1
+  - id: 5
+    parentId: 1
+    childIndex: 2
+    type: 4
+    typeInfoSH: 0
+    permissions: 0
+    tagCount: 4
+    size: 3
+    choiceCount: 0
+    hasMin: 0
+    hasMax: 0
+    hasUIMin: 0
+    hasUIMax: 0
+    min: 0
+    max: 10
+    UIMin: 0
+    UIMax: 10
+    invisible: 0
+    disabled: 0
+    spare: 0
+    joinNext: 0
+    labelNone: 0
+    intValuesIndex: -1
+    floatValuesIndex: 0
+    stringValuesIndex: -1
+    choiceIndex: 12
+    isChildOfMultiParm: 0
+    instanceNum: -1
+    instanceLength: 0
+    instanceCount: 0
+    instanceStartOffset: -1
+    rampType: -1
+  - id: 6
+    parentId: 1
+    childIndex: 3
+    type: 4
+    typeInfoSH: 0
+    permissions: 0
+    tagCount: 4
+    size: 3
+    choiceCount: 0
+    hasMin: 0
+    hasMax: 0
+    hasUIMin: 1
+    hasUIMax: 1
+    min: 0
+    max: 360
+    UIMin: 0
+    UIMax: 360
+    invisible: 0
+    disabled: 0
+    spare: 0
+    joinNext: 0
+    labelNone: 0
+    intValuesIndex: -1
+    floatValuesIndex: 3
+    stringValuesIndex: -1
+    choiceIndex: 12
+    isChildOfMultiParm: 0
+    instanceNum: -1
+    instanceLength: 0
+    instanceCount: 0
+    instanceStartOffset: -1
+    rampType: -1
+  - id: 7
+    parentId: 1
+    childIndex: 4
+    type: 4
+    typeInfoSH: 0
+    permissions: 0
+    tagCount: 4
+    size: 3
+    choiceCount: 0
+    hasMin: 0
+    hasMax: 0
+    hasUIMin: 0
+    hasUIMax: 0
+    min: 0
+    max: 10
+    UIMin: 0
+    UIMax: 10
+    invisible: 0
+    disabled: 0
+    spare: 0
+    joinNext: 0
+    labelNone: 0
+    intValuesIndex: -1
+    floatValuesIndex: 6
+    stringValuesIndex: -1
+    choiceIndex: 12
+    isChildOfMultiParm: 0
+    instanceNum: -1
+    instanceLength: 0
+    instanceCount: 0
+    instanceStartOffset: -1
+    rampType: -1
+  - id: 8
+    parentId: 1
+    childIndex: 5
+    type: 4
+    typeInfoSH: 0
+    permissions: 0
+    tagCount: 3
+    size: 3
+    choiceCount: 0
+    hasMin: 0
+    hasMax: 0
+    hasUIMin: 0
+    hasUIMax: 0
+    min: 0
+    max: 10
+    UIMin: 0
+    UIMax: 10
+    invisible: 0
+    disabled: 0
+    spare: 0
+    joinNext: 0
+    labelNone: 0
+    intValuesIndex: -1
+    floatValuesIndex: 9
+    stringValuesIndex: -1
+    choiceIndex: 12
+    isChildOfMultiParm: 0
+    instanceNum: -1
+    instanceLength: 0
+    instanceCount: 0
+    instanceStartOffset: -1
+    rampType: -1
+  - id: 9
+    parentId: 1
+    childIndex: 6
+    type: 4
+    typeInfoSH: 0
+    permissions: 0
+    tagCount: 0
+    size: 1
+    choiceCount: 0
+    hasMin: 0
+    hasMax: 0
+    hasUIMin: 0
+    hasUIMax: 0
+    min: 0
+    max: 10
+    UIMin: 0
+    UIMax: 10
+    invisible: 0
+    disabled: 0
+    spare: 0
+    joinNext: 0
+    labelNone: 0
+    intValuesIndex: -1
+    floatValuesIndex: 12
+    stringValuesIndex: -1
+    choiceIndex: 12
+    isChildOfMultiParm: 0
+    instanceNum: -1
+    instanceLength: 0
+    instanceCount: 0
+    instanceStartOffset: -1
+    rampType: -1
+  - id: 10
+    parentId: 1
+    childIndex: 7
+    type: 3
+    typeInfoSH: 0
+    permissions: 0
+    tagCount: 0
+    size: 1
+    choiceCount: 6
+    hasMin: 0
+    hasMax: 0
+    hasUIMin: 0
+    hasUIMax: 0
+    min: 0
+    max: 10
+    UIMin: 0
+    UIMax: 10
+    invisible: 0
+    disabled: 0
+    spare: 0
+    joinNext: 0
+    labelNone: 0
+    intValuesIndex: 2
+    floatValuesIndex: -1
+    stringValuesIndex: -1
+    choiceIndex: 12
+    isChildOfMultiParm: 0
+    instanceNum: -1
+    instanceLength: 0
+    instanceCount: 0
+    instanceStartOffset: -1
+    rampType: -1
+  - id: 11
+    parentId: 1
+    childIndex: 8
+    type: 2
+    typeInfoSH: 0
+    permissions: 0
+    tagCount: 0
+    size: 1
+    choiceCount: 2
+    hasMin: 0
+    hasMax: 0
+    hasUIMin: 0
+    hasUIMax: 0
+    min: 0
+    max: 10
+    UIMin: 0
+    UIMax: 10
+    invisible: 0
+    disabled: 0
+    spare: 0
+    joinNext: 0
+    labelNone: 0
+    intValuesIndex: 3
+    floatValuesIndex: -1
+    stringValuesIndex: -1
+    choiceIndex: 18
+    isChildOfMultiParm: 0
+    instanceNum: -1
+    instanceLength: 0
+    instanceCount: 0
+    instanceStartOffset: -1
+    rampType: -1
+  - id: 12
+    parentId: 1
+    childIndex: 9
+    type: 2
+    typeInfoSH: 0
+    permissions: 0
+    tagCount: 0
+    size: 1
+    choiceCount: 2
+    hasMin: 0
+    hasMax: 0
+    hasUIMin: 0
+    hasUIMax: 0
+    min: 0
+    max: 10
+    UIMin: 0
+    UIMax: 10
+    invisible: 0
+    disabled: 0
+    spare: 0
+    joinNext: 0
+    labelNone: 0
+    intValuesIndex: 4
+    floatValuesIndex: -1
+    stringValuesIndex: -1
+    choiceIndex: 20
+    isChildOfMultiParm: 0
+    instanceNum: -1
+    instanceLength: 0
+    instanceCount: 0
+    instanceStartOffset: -1
+    rampType: -1
+  - id: 13
+    parentId: 1
+    childIndex: 10
+    type: 2
+    typeInfoSH: 0
+    permissions: 0
+    tagCount: 0
+    size: 1
+    choiceCount: 2
+    hasMin: 0
+    hasMax: 0
+    hasUIMin: 0
+    hasUIMax: 0
+    min: 0
+    max: 10
+    UIMin: 0
+    UIMax: 10
+    invisible: 0
+    disabled: 0
+    spare: 0
+    joinNext: 0
+    labelNone: 0
+    intValuesIndex: 5
+    floatValuesIndex: -1
+    stringValuesIndex: -1
+    choiceIndex: 22
+    isChildOfMultiParm: 0
+    instanceNum: -1
+    instanceLength: 0
+    instanceCount: 0
+    instanceStartOffset: -1
+    rampType: -1
+  - id: 14
+    parentId: 1
+    childIndex: 11
+    type: 10
+    typeInfoSH: 0
+    permissions: 0
+    tagCount: 5
+    size: 1
+    choiceCount: 0
+    hasMin: 0
+    hasMax: 0
+    hasUIMin: 0
+    hasUIMax: 0
+    min: 0
+    max: 10
+    UIMin: 0
+    UIMax: 10
+    invisible: 1
+    disabled: 0
+    spare: 0
+    joinNext: 0
+    labelNone: 0
+    intValuesIndex: -1
+    floatValuesIndex: -1
+    stringValuesIndex: 0
+    choiceIndex: 24
+    isChildOfMultiParm: 0
+    instanceNum: -1
+    instanceLength: 0
+    instanceCount: 0
+    instanceStartOffset: -1
+    rampType: -1
+  - id: 15
+    parentId: 1
+    childIndex: 12
+    type: 10
+    typeInfoSH: 0
+    permissions: 0
+    tagCount: 2
+    size: 1
+    choiceCount: 0
+    hasMin: 0
+    hasMax: 0
+    hasUIMin: 0
+    hasUIMax: 0
+    min: 0
+    max: 10
+    UIMin: 0
+    UIMax: 10
+    invisible: 1
+    disabled: 0
+    spare: 0
+    joinNext: 0
+    labelNone: 0
+    intValuesIndex: -1
+    floatValuesIndex: -1
+    stringValuesIndex: 1
+    choiceIndex: 24
+    isChildOfMultiParm: 0
+    instanceNum: -1
+    instanceLength: 0
+    instanceCount: 0
+    instanceStartOffset: -1
+    rampType: -1
+  - id: 16
+    parentId: 1
+    childIndex: 13
+    type: 10
+    typeInfoSH: 0
+    permissions: 0
+    tagCount: 2
+    size: 1
+    choiceCount: 0
+    hasMin: 0
+    hasMax: 0
+    hasUIMin: 0
+    hasUIMax: 0
+    min: 0
+    max: 10
+    UIMin: 0
+    UIMax: 10
+    invisible: 1
+    disabled: 1
+    spare: 0
+    joinNext: 0
+    labelNone: 0
+    intValuesIndex: -1
+    floatValuesIndex: -1
+    stringValuesIndex: 2
+    choiceIndex: 24
+    isChildOfMultiParm: 0
+    instanceNum: -1
+    instanceLength: 0
+    instanceCount: 0
+    instanceStartOffset: -1
+    rampType: -1
+  - id: 17
+    parentId: 1
+    childIndex: 14
+    type: 6
+    typeInfoSH: 0
+    permissions: 0
+    tagCount: 0
+    size: 1
+    choiceCount: 5
+    hasMin: 0
+    hasMax: 0
+    hasUIMin: 0
+    hasUIMax: 0
+    min: 0
+    max: 10
+    UIMin: 0
+    UIMax: 10
+    invisible: 1
+    disabled: 1
+    spare: 0
+    joinNext: 0
+    labelNone: 0
+    intValuesIndex: -1
+    floatValuesIndex: -1
+    stringValuesIndex: 3
+    choiceIndex: 24
+    isChildOfMultiParm: 0
+    instanceNum: -1
+    instanceLength: 0
+    instanceCount: 0
+    instanceStartOffset: -1
+    rampType: -1
+  - id: 18
+    parentId: 1
+    childIndex: 15
+    type: 10
+    typeInfoSH: 0
+    permissions: 0
+    tagCount: 2
+    size: 1
+    choiceCount: 0
+    hasMin: 0
+    hasMax: 0
+    hasUIMin: 0
+    hasUIMax: 0
+    min: 0
+    max: 10
+    UIMin: 0
+    UIMax: 10
+    invisible: 1
+    disabled: 0
+    spare: 0
+    joinNext: 0
+    labelNone: 0
+    intValuesIndex: -1
+    floatValuesIndex: -1
+    stringValuesIndex: 4
+    choiceIndex: 29
+    isChildOfMultiParm: 0
+    instanceNum: -1
+    instanceLength: 0
+    instanceCount: 0
+    instanceStartOffset: -1
+    rampType: -1
+  - id: 19
+    parentId: 1
+    childIndex: 16
+    type: 4
+    typeInfoSH: 0
+    permissions: 0
+    tagCount: 0
+    size: 1
+    choiceCount: 0
+    hasMin: 0
+    hasMax: 0
+    hasUIMin: 1
+    hasUIMax: 1
+    min: -360
+    max: 360
+    UIMin: -360
+    UIMax: 360
+    invisible: 1
+    disabled: 1
+    spare: 0
+    joinNext: 0
+    labelNone: 0
+    intValuesIndex: -1
+    floatValuesIndex: 13
+    stringValuesIndex: -1
+    choiceIndex: 29
+    isChildOfMultiParm: 0
+    instanceNum: -1
+    instanceLength: 0
+    instanceCount: 0
+    instanceStartOffset: -1
+    rampType: -1
+  - id: 20
+    parentId: 1
+    childIndex: 17
+    type: 4
+    typeInfoSH: 0
+    permissions: 0
+    tagCount: 0
+    size: 1
+    choiceCount: 0
+    hasMin: 1
+    hasMax: 0
+    hasUIMin: 1
+    hasUIMax: 1
+    min: 0
+    max: 10
+    UIMin: 0
+    UIMax: 10
+    invisible: 1
+    disabled: 1
+    spare: 0
+    joinNext: 0
+    labelNone: 0
+    intValuesIndex: -1
+    floatValuesIndex: 14
+    stringValuesIndex: -1
+    choiceIndex: 29
+    isChildOfMultiParm: 0
+    instanceNum: -1
+    instanceLength: 0
+    instanceCount: 0
+    instanceStartOffset: -1
+    rampType: -1
+  - id: 21
+    parentId: 1
+    childIndex: 18
+    type: 0
+    typeInfoSH: 0
+    permissions: 0
+    tagCount: 0
+    size: 1
+    choiceCount: 2
+    hasMin: 0
+    hasMax: 0
+    hasUIMin: 0
+    hasUIMax: 0
+    min: 0
+    max: 10
+    UIMin: 0
+    UIMax: 10
+    invisible: 1
+    disabled: 1
+    spare: 0
+    joinNext: 0
+    labelNone: 0
+    intValuesIndex: 6
+    floatValuesIndex: -1
+    stringValuesIndex: -1
+    choiceIndex: 29
+    isChildOfMultiParm: 0
+    instanceNum: -1
+    instanceLength: 0
+    instanceCount: 0
+    instanceStartOffset: -1
+    rampType: -1
+  - id: 22
+    parentId: 1
+    childIndex: 19
+    type: 0
+    typeInfoSH: 0
+    permissions: 0
+    tagCount: 0
+    size: 1
+    choiceCount: 0
+    hasMin: 0
+    hasMax: 0
+    hasUIMin: 1
+    hasUIMax: 1
+    min: 0
+    max: 1
+    UIMin: 0
+    UIMax: 1
+    invisible: 1
+    disabled: 1
+    spare: 0
+    joinNext: 0
+    labelNone: 0
+    intValuesIndex: 7
+    floatValuesIndex: -1
+    stringValuesIndex: -1
+    choiceIndex: 31
+    isChildOfMultiParm: 0
+    instanceNum: -1
+    instanceLength: 0
+    instanceCount: 0
+    instanceStartOffset: -1
+    rampType: -1
+  - id: 23
+    parentId: 1
+    childIndex: 20
+    type: 4
+    typeInfoSH: 0
+    permissions: 0
+    tagCount: 0
+    size: 3
+    choiceCount: 0
+    hasMin: 0
+    hasMax: 0
+    hasUIMin: 0
+    hasUIMax: 0
+    min: 0
+    max: 10
+    UIMin: 0
+    UIMax: 10
+    invisible: 1
+    disabled: 1
+    spare: 0
+    joinNext: 0
+    labelNone: 0
+    intValuesIndex: -1
+    floatValuesIndex: 15
+    stringValuesIndex: -1
+    choiceIndex: 31
+    isChildOfMultiParm: 0
+    instanceNum: -1
+    instanceLength: 0
+    instanceCount: 0
+    instanceStartOffset: -1
+    rampType: -1
+  - id: 24
+    parentId: 1
+    childIndex: 21
+    type: 4
+    typeInfoSH: 0
+    permissions: 0
+    tagCount: 0
+    size: 1
+    choiceCount: 0
+    hasMin: 0
+    hasMax: 0
+    hasUIMin: 1
+    hasUIMax: 1
+    min: -1
+    max: 1
+    UIMin: -1
+    UIMax: 1
+    invisible: 1
+    disabled: 1
+    spare: 0
+    joinNext: 0
+    labelNone: 0
+    intValuesIndex: -1
+    floatValuesIndex: 18
+    stringValuesIndex: -1
+    choiceIndex: 31
+    isChildOfMultiParm: 0
+    instanceNum: -1
+    instanceLength: 0
+    instanceCount: 0
+    instanceStartOffset: -1
+    rampType: -1
+  - id: 25
+    parentId: 2
+    childIndex: 0
+    type: 6
+    typeInfoSH: 0
+    permissions: 0
+    tagCount: 0
+    size: 1
+    choiceCount: 0
+    hasMin: 0
+    hasMax: 0
+    hasUIMin: 0
+    hasUIMax: 0
+    min: 0
+    max: 10
+    UIMin: 0
+    UIMax: 10
+    invisible: 1
+    disabled: 0
+    spare: 0
+    joinNext: 0
+    labelNone: 0
+    intValuesIndex: -1
+    floatValuesIndex: -1
+    stringValuesIndex: 5
+    choiceIndex: 31
+    isChildOfMultiParm: 0
+    instanceNum: -1
+    instanceLength: 0
+    instanceCount: 0
+    instanceStartOffset: -1
+    rampType: -1
+  - id: 26
+    parentId: 2
+    childIndex: 1
+    type: 6
+    typeInfoSH: 0
+    permissions: 0
+    tagCount: 0
+    size: 1
+    choiceCount: 0
+    hasMin: 0
+    hasMax: 0
+    hasUIMin: 0
+    hasUIMax: 0
+    min: 0
+    max: 10
+    UIMin: 0
+    UIMax: 10
+    invisible: 1
+    disabled: 0
+    spare: 0
+    joinNext: 0
+    labelNone: 0
+    intValuesIndex: -1
+    floatValuesIndex: -1
+    stringValuesIndex: 6
+    choiceIndex: 31
+    isChildOfMultiParm: 0
+    instanceNum: -1
+    instanceLength: 0
+    instanceCount: 0
+    instanceStartOffset: -1
+    rampType: -1
+  - id: 27
+    parentId: 2
+    childIndex: 2
+    type: 6
+    typeInfoSH: 0
+    permissions: 0
+    tagCount: 0
+    size: 1
+    choiceCount: 0
+    hasMin: 0
+    hasMax: 0
+    hasUIMin: 0
+    hasUIMax: 0
+    min: 0
+    max: 10
+    UIMin: 0
+    UIMax: 10
+    invisible: 1
+    disabled: 0
+    spare: 0
+    joinNext: 0
+    labelNone: 0
+    intValuesIndex: -1
+    floatValuesIndex: -1
+    stringValuesIndex: 7
+    choiceIndex: 31
+    isChildOfMultiParm: 0
+    instanceNum: -1
+    instanceLength: 0
+    instanceCount: 0
+    instanceStartOffset: -1
+    rampType: -1
+  - id: 28
+    parentId: 2
+    childIndex: 3
+    type: 6
+    typeInfoSH: 0
+    permissions: 0
+    tagCount: 0
+    size: 1
+    choiceCount: 0
+    hasMin: 0
+    hasMax: 0
+    hasUIMin: 0
+    hasUIMax: 0
+    min: 0
+    max: 10
+    UIMin: 0
+    UIMax: 10
+    invisible: 1
+    disabled: 0
+    spare: 0
+    joinNext: 0
+    labelNone: 0
+    intValuesIndex: -1
+    floatValuesIndex: -1
+    stringValuesIndex: 8
+    choiceIndex: 31
+    isChildOfMultiParm: 0
+    instanceNum: -1
+    instanceLength: 0
+    instanceCount: 0
+    instanceStartOffset: -1
+    rampType: -1
+  - id: 29
+    parentId: 2
+    childIndex: 4
+    type: 2
+    typeInfoSH: 0
+    permissions: 0
+    tagCount: 0
+    size: 1
+    choiceCount: 2
+    hasMin: 0
+    hasMax: 0
+    hasUIMin: 0
+    hasUIMax: 0
+    min: 0
+    max: 10
+    UIMin: 0
+    UIMax: 10
+    invisible: 0
+    disabled: 0
+    spare: 0
+    joinNext: 1
+    labelNone: 1
+    intValuesIndex: 8
+    floatValuesIndex: -1
+    stringValuesIndex: -1
+    choiceIndex: 31
+    isChildOfMultiParm: 0
+    instanceNum: -1
+    instanceLength: 0
+    instanceCount: 0
+    instanceStartOffset: -1
+    rampType: -1
+  - id: 30
+    parentId: 2
+    childIndex: 5
+    type: 0
+    typeInfoSH: 0
+    permissions: 0
+    tagCount: 0
+    size: 1
+    choiceCount: 0
+    hasMin: 1
+    hasMax: 1
+    hasUIMin: 1
+    hasUIMax: 1
+    min: 0
+    max: 1
+    UIMin: 0
+    UIMax: 1
+    invisible: 0
+    disabled: 1
+    spare: 0
+    joinNext: 0
+    labelNone: 0
+    intValuesIndex: 9
+    floatValuesIndex: -1
+    stringValuesIndex: -1
+    choiceIndex: 33
+    isChildOfMultiParm: 0
+    instanceNum: -1
+    instanceLength: 0
+    instanceCount: 0
+    instanceStartOffset: -1
+    rampType: -1
+  - id: 31
+    parentId: 2
+    childIndex: 6
+    type: 6
+    typeInfoSH: 0
+    permissions: 0
+    tagCount: 0
+    size: 1
+    choiceCount: 7
+    hasMin: 0
+    hasMax: 0
+    hasUIMin: 0
+    hasUIMax: 0
+    min: 0
+    max: 10
+    UIMin: 0
+    UIMax: 10
+    invisible: 0
+    disabled: 0
+    spare: 0
+    joinNext: 0
+    labelNone: 0
+    intValuesIndex: -1
+    floatValuesIndex: -1
+    stringValuesIndex: 9
+    choiceIndex: 33
+    isChildOfMultiParm: 0
+    instanceNum: -1
+    instanceLength: 0
+    instanceCount: 0
+    instanceStartOffset: -1
+    rampType: -1
+  - id: 32
+    parentId: 2
+    childIndex: 7
+    type: 6
+    typeInfoSH: 0
+    permissions: 0
+    tagCount: 2
+    size: 1
+    choiceCount: 0
+    hasMin: 0
+    hasMax: 0
+    hasUIMin: 0
+    hasUIMax: 0
+    min: 0
+    max: 10
+    UIMin: 0
+    UIMax: 10
+    invisible: 0
+    disabled: 0
+    spare: 0
+    joinNext: 0
+    labelNone: 0
+    intValuesIndex: -1
+    floatValuesIndex: -1
+    stringValuesIndex: 10
+    choiceIndex: 40
+    isChildOfMultiParm: 0
+    instanceNum: -1
+    instanceLength: 0
+    instanceCount: 0
+    instanceStartOffset: -1
+    rampType: -1
+  - id: 33
+    parentId: 2
+    childIndex: 8
+    type: 2
+    typeInfoSH: 0
+    permissions: 0
+    tagCount: 0
+    size: 1
+    choiceCount: 2
+    hasMin: 0
+    hasMax: 0
+    hasUIMin: 0
+    hasUIMax: 0
+    min: 0
+    max: 10
+    UIMin: 0
+    UIMax: 10
+    invisible: 0
+    disabled: 0
+    spare: 0
+    joinNext: 0
+    labelNone: 0
+    intValuesIndex: 10
+    floatValuesIndex: -1
+    stringValuesIndex: -1
+    choiceIndex: 40
+    isChildOfMultiParm: 0
+    instanceNum: -1
+    instanceLength: 0
+    instanceCount: 0
+    instanceStartOffset: -1
+    rampType: -1
+  - id: 34
+    parentId: 2
+    childIndex: 9
+    type: 7
+    typeInfoSH: 224
+    permissions: 2
+    tagCount: 1
+    size: 1
+    choiceCount: 0
+    hasMin: 0
+    hasMax: 0
+    hasUIMin: 0
+    hasUIMax: 0
+    min: 0
+    max: 10
+    UIMin: 0
+    UIMax: 10
+    invisible: 0
+    disabled: 0
+    spare: 0
+    joinNext: 0
+    labelNone: 0
+    intValuesIndex: -1
+    floatValuesIndex: -1
+    stringValuesIndex: 11
+    choiceIndex: 42
+    isChildOfMultiParm: 0
+    instanceNum: -1
+    instanceLength: 0
+    instanceCount: 0
+    instanceStartOffset: -1
+    rampType: -1
+  - id: 35
+    parentId: 2
+    childIndex: 10
+    type: 2
+    typeInfoSH: 0
+    permissions: 0
+    tagCount: 0
+    size: 1
+    choiceCount: 2
+    hasMin: 0
+    hasMax: 0
+    hasUIMin: 0
+    hasUIMax: 0
+    min: 0
+    max: 10
+    UIMin: 0
+    UIMax: 10
+    invisible: 0
+    disabled: 0
+    spare: 0
+    joinNext: 0
+    labelNone: 0
+    intValuesIndex: 11
+    floatValuesIndex: -1
+    stringValuesIndex: -1
+    choiceIndex: 42
+    isChildOfMultiParm: 0
+    instanceNum: -1
+    instanceLength: 0
+    instanceCount: 0
+    instanceStartOffset: -1
+    rampType: -1
+  - id: 36
+    parentId: 2
+    childIndex: 11
+    type: 2
+    typeInfoSH: 0
+    permissions: 0
+    tagCount: 0
+    size: 1
+    choiceCount: 2
+    hasMin: 0
+    hasMax: 0
+    hasUIMin: 0
+    hasUIMax: 0
+    min: 0
+    max: 10
+    UIMin: 0
+    UIMax: 10
+    invisible: 1
+    disabled: 0
+    spare: 0
+    joinNext: 0
+    labelNone: 0
+    intValuesIndex: 12
+    floatValuesIndex: -1
+    stringValuesIndex: -1
+    choiceIndex: 44
+    isChildOfMultiParm: 0
+    instanceNum: -1
+    instanceLength: 0
+    instanceCount: 0
+    instanceStartOffset: -1
+    rampType: -1
+  - id: 37
+    parentId: 2
+    childIndex: 12
+    type: 5
+    typeInfoSH: 0
+    permissions: 0
+    tagCount: 0
+    size: 3
+    choiceCount: 0
+    hasMin: 1
+    hasMax: 1
+    hasUIMin: 1
+    hasUIMax: 1
+    min: 0
+    max: 1
+    UIMin: 0
+    UIMax: 1
+    invisible: 1
+    disabled: 0
+    spare: 0
+    joinNext: 0
+    labelNone: 0
+    intValuesIndex: -1
+    floatValuesIndex: 19
+    stringValuesIndex: -1
+    choiceIndex: 46
+    isChildOfMultiParm: 0
+    instanceNum: -1
+    instanceLength: 0
+    instanceCount: 0
+    instanceStartOffset: -1
+    rampType: -1
+  - id: 38
+    parentId: -1
+    childIndex: 36
+    type: 4
+    typeInfoSH: 0
+    permissions: 0
+    tagCount: 1
+    size: 1
+    choiceCount: 0
+    hasMin: 0
+    hasMax: 0
+    hasUIMin: 1
+    hasUIMax: 1
+    min: 0
+    max: 10
+    UIMin: 0
+    UIMax: 10
+    invisible: 0
+    disabled: 0
+    spare: 0
+    joinNext: 0
+    labelNone: 0
+    intValuesIndex: -1
+    floatValuesIndex: 22
+    stringValuesIndex: -1
+    choiceIndex: 46
+    isChildOfMultiParm: 0
+    instanceNum: -1
+    instanceLength: 0
+    instanceCount: 0
+    instanceStartOffset: -1
+    rampType: -1
+  - id: 39
+    parentId: -1
+    childIndex: 37
+    type: 0
+    typeInfoSH: 0
+    permissions: 0
+    tagCount: 1
+    size: 1
+    choiceCount: 0
+    hasMin: 1
+    hasMax: 0
+    hasUIMin: 1
+    hasUIMax: 1
+    min: 1
+    max: 10
+    UIMin: 1
+    UIMax: 10
+    invisible: 0
+    disabled: 0
+    spare: 0
+    joinNext: 0
+    labelNone: 0
+    intValuesIndex: 13
+    floatValuesIndex: -1
+    stringValuesIndex: -1
+    choiceIndex: 46
+    isChildOfMultiParm: 0
+    instanceNum: -1
+    instanceLength: 0
+    instanceCount: 0
+    instanceStartOffset: -1
+    rampType: -1
+  - id: 40
+    parentId: -1
+    childIndex: 38
+    type: 4
+    typeInfoSH: 0
+    permissions: 0
+    tagCount: 3
+    size: 1
+    choiceCount: 0
+    hasMin: 0
+    hasMax: 0
+    hasUIMin: 1
+    hasUIMax: 1
+    min: 0
+    max: 4
+    UIMin: 0
+    UIMax: 4
+    invisible: 0
+    disabled: 0
+    spare: 0
+    joinNext: 0
+    labelNone: 0
+    intValuesIndex: -1
+    floatValuesIndex: 23
+    stringValuesIndex: -1
+    choiceIndex: 46
+    isChildOfMultiParm: 0
+    instanceNum: -1
+    instanceLength: 0
+    instanceCount: 0
+    instanceStartOffset: -1
+    rampType: -1
+  - id: 41
+    parentId: -1
+    childIndex: 39
+    type: 4
+    typeInfoSH: 0
+    permissions: 0
+    tagCount: 3
+    size: 1
+    choiceCount: 0
+    hasMin: 0
+    hasMax: 0
+    hasUIMin: 1
+    hasUIMax: 1
+    min: 0
+    max: 1
+    UIMin: 0
+    UIMax: 1
+    invisible: 0
+    disabled: 0
+    spare: 0
+    joinNext: 0
+    labelNone: 0
+    intValuesIndex: -1
+    floatValuesIndex: 24
+    stringValuesIndex: -1
+    choiceIndex: 46
+    isChildOfMultiParm: 0
+    instanceNum: -1
+    instanceLength: 0
+    instanceCount: 0
+    instanceStartOffset: -1
+    rampType: -1
+  myParmIntValues: 0000000000000000000000000000000000000000000000000100000001000000000000000100000001000000010000000100000002000000
+  myParmFloatValues:
+  - 1.4963617
+  - 0
+  - 2.0352404
+  - 0
+  - -0
+  - 0
+  - 1
+  - 1
+  - 1
+  - 0
+  - 0
+  - 0
+  - 1
+  - 0
+  - 0
+  - 0
+  - 1
+  - 0
+  - 0
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1.841
+  - 0.5
+  myParmStringHandles: a4010000c9010000ba0100007b010000e2010000e3010000e0010000e1010000e6010000e7010000e4010000e5010000
+  myParmChoiceLists:
+  - parentParmId: 3
+  - parentParmId: 3
+  - parentParmId: 3
+  - parentParmId: 3
+  - parentParmId: 3
+  - parentParmId: 3
+  - parentParmId: 4
+  - parentParmId: 4
+  - parentParmId: 4
+  - parentParmId: 4
+  - parentParmId: 4
+  - parentParmId: 4
+  - parentParmId: 10
+  - parentParmId: 10
+  - parentParmId: 10
+  - parentParmId: 10
+  - parentParmId: 10
+  - parentParmId: 10
+  - parentParmId: 11
+  - parentParmId: 11
+  - parentParmId: 12
+  - parentParmId: 12
+  - parentParmId: 13
+  - parentParmId: 13
+  - parentParmId: 17
+  - parentParmId: 17
+  - parentParmId: 17
+  - parentParmId: 17
+  - parentParmId: 17
+  - parentParmId: 21
+  - parentParmId: 21
+  - parentParmId: 29
+  - parentParmId: 29
+  - parentParmId: 31
+  - parentParmId: 31
+  - parentParmId: 31
+  - parentParmId: 31
+  - parentParmId: 31
+  - parentParmId: 31
+  - parentParmId: 31
+  - parentParmId: 33
+  - parentParmId: 33
+  - parentParmId: 35
+  - parentParmId: 35
+  - parentParmId: 36
+  - parentParmId: 36
+  myParmInfoStrings:
+  - typeInfo: 
+    name: stdswitcher3
+    label: 
+    templateName: 
+    help: 
+  - typeInfo: 
+    name: stdswitcher3_0
+    label: Transform
+    templateName: stdswitcher3_0
+    help: 
+  - typeInfo: 
+    name: stdswitcher3_1
+    label: Subnet
+    templateName: stdswitcher3_1
+    help: 
+  - typeInfo: 
+    name: xOrd
+    label: Transform Order
+    templateName: xOrd
+    help: 
+  - typeInfo: 
+    name: rOrd
+    label: Rotate Order
+    templateName: rOrd
+    help: 
+  - typeInfo: 
+    name: t
+    label: Translate
+    templateName: t
+    help: 
+  - typeInfo: 
+    name: r
+    label: Rotate
+    templateName: r
+    help: 
+  - typeInfo: 
+    name: s
+    label: Scale
+    templateName: s
+    help: 
+  - typeInfo: 
+    name: p
+    label: Pivot
+    templateName: p
+    help: 
+  - typeInfo: 
+    name: scale
+    label: Uniform Scale
+    templateName: scale
+    help: 
+  - typeInfo: 
+    name: pre_xform
+    label: Modify Pre-Transform
+    templateName: pre_xform
+    help: 
+  - typeInfo: 
+    name: keeppos
+    label: Keep Position When Parenting
+    templateName: keeppos
+    help: 
+  - typeInfo: 
+    name: childcomp
+    label: Child Compensation
+    templateName: childcomp
+    help: 
+  - typeInfo: 
+    name: constraints_on
+    label: Enable Constraints
+    templateName: constraints_on
+    help: 
+  - typeInfo: 
+    name: constraints_path
+    label: Constraints
+    templateName: constraints_path
+    help: 
+  - typeInfo: 
+    name: lookatpath
+    label: Look At
+    templateName: lookatpath
+    help: 
+  - typeInfo: 
+    name: lookupobjpath
+    label: Look Up Object
+    templateName: lookupobjpath
+    help: 
+  - typeInfo: 
+    name: lookup
+    label: Look At Up Vector
+    templateName: lookup
+    help: 
+  - typeInfo: 
+    name: pathobjpath
+    label: Path Object
+    templateName: pathobjpath
+    help: 
+  - typeInfo: 
+    name: roll
+    label: Roll
+    templateName: roll
+    help: 
+  - typeInfo: 
+    name: pos
+    label: Position
+    templateName: pos
+    help: 
+  - typeInfo: 
+    name: uparmtype
+    label: Parameterization
+    templateName: uparmtype
+    help: 
+  - typeInfo: 
+    name: pathorient
+    label: Orient Along Path
+    templateName: pathorient
+    help: 
+  - typeInfo: 
+    name: up
+    label: Orient Up Vector
+    templateName: up
+    help: 
+  - typeInfo: 
+    name: bank
+    label: Auto-Bank factor
+    templateName: bank
+    help: 
+  - typeInfo: 
+    name: label1
+    label: 'Input #1 Label'
+    templateName: label1
+    help: 
+  - typeInfo: 
+    name: label2
+    label: 'Input #2 Label'
+    templateName: label2
+    help: 
+  - typeInfo: 
+    name: label3
+    label: 'Input #3 Label'
+    templateName: label3
+    help: 
+  - typeInfo: 
+    name: label4
+    label: 'Input #4 Label'
+    templateName: label4
+    help: 
+  - typeInfo: 
+    name: tdisplay
+    label: Display
+    templateName: tdisplay
+    help: 
+  - typeInfo: 
+    name: display
+    label: Display
+    templateName: display
+    help: 
+  - typeInfo: 
+    name: outputobj
+    label: Output Transform
+    templateName: outputobj
+    help: 
+  - typeInfo: 
+    name: visibleobjects
+    label: Visible Children
+    templateName: visibleobjects
+    help: 
+  - typeInfo: 
+    name: picking
+    label: Viewport Selecting Enabled
+    templateName: picking
+    help: 
+  - typeInfo: 
+    name: pickscript
+    label: Select Script
+    templateName: pickscript
+    help: 
+  - typeInfo: 
+    name: caching
+    label: Cache Object Transform
+    templateName: caching
+    help: 
+  - typeInfo: 
+    name: use_dcolor
+    label: Set Wireframe Color
+    templateName: use_dcolor
+    help: 
+  - typeInfo: 
+    name: dcolor
+    label: Wireframe Color
+    templateName: dcolor
+    help: 
+  - typeInfo: 
+    name: scale2
+    label: Uniform Scale
+    templateName: scale2
+    help: 
+  - typeInfo: 
+    name: freq
+    label: Frequency
+    templateName: freq
+    help: 
+  - typeInfo: 
+    name: lac
+    label: Lacunarity
+    templateName: lac
+    help: 
+  - typeInfo: 
+    name: rough
+    label: Roughness
+    templateName: rough
+    help: 
+  myParmInputs:
+  - isAsset: 0
+    inputObject: {fileID: 0}
+    newInputObject: {fileID: 0}
+    inputNodeId: 0
+    inputNodeUniqueId: 0
+  - isAsset: 0
+    inputObject: {fileID: 0}
+    newInputObject: {fileID: 0}
+    inputNodeId: 0
+    inputNodeUniqueId: 0
+  - isAsset: 0
+    inputObject: {fileID: 0}
+    newInputObject: {fileID: 0}
+    inputNodeId: 0
+    inputNodeUniqueId: 0
+  - isAsset: 0
+    inputObject: {fileID: 0}
+    newInputObject: {fileID: 0}
+    inputNodeId: 0
+    inputNodeUniqueId: 0
+  - isAsset: 0
+    inputObject: {fileID: 0}
+    newInputObject: {fileID: 0}
+    inputNodeId: 0
+    inputNodeUniqueId: 0
+  - isAsset: 0
+    inputObject: {fileID: 0}
+    newInputObject: {fileID: 0}
+    inputNodeId: 0
+    inputNodeUniqueId: 0
+  - isAsset: 0
+    inputObject: {fileID: 0}
+    newInputObject: {fileID: 0}
+    inputNodeId: 0
+    inputNodeUniqueId: 0
+  - isAsset: 0
+    inputObject: {fileID: 0}
+    newInputObject: {fileID: 0}
+    inputNodeId: 0
+    inputNodeUniqueId: 0
+  - isAsset: 0
+    inputObject: {fileID: 0}
+    newInputObject: {fileID: 0}
+    inputNodeId: 0
+    inputNodeUniqueId: 0
+  - isAsset: 0
+    inputObject: {fileID: 0}
+    newInputObject: {fileID: 0}
+    inputNodeId: 0
+    inputNodeUniqueId: 0
+  - isAsset: 0
+    inputObject: {fileID: 0}
+    newInputObject: {fileID: 0}
+    inputNodeId: 0
+    inputNodeUniqueId: 0
+  - isAsset: 0
+    inputObject: {fileID: 0}
+    newInputObject: {fileID: 0}
+    inputNodeId: 0
+    inputNodeUniqueId: 0
+  - isAsset: 0
+    inputObject: {fileID: 0}
+    newInputObject: {fileID: 0}
+    inputNodeId: 0
+    inputNodeUniqueId: 0
+  - isAsset: 0
+    inputObject: {fileID: 0}
+    newInputObject: {fileID: 0}
+    inputNodeId: 0
+    inputNodeUniqueId: 0
+  - isAsset: 0
+    inputObject: {fileID: 0}
+    newInputObject: {fileID: 0}
+    inputNodeId: 0
+    inputNodeUniqueId: 0
+  - isAsset: 0
+    inputObject: {fileID: 0}
+    newInputObject: {fileID: 0}
+    inputNodeId: 0
+    inputNodeUniqueId: 0
+  - isAsset: 0
+    inputObject: {fileID: 0}
+    newInputObject: {fileID: 0}
+    inputNodeId: 0
+    inputNodeUniqueId: 0
+  - isAsset: 0
+    inputObject: {fileID: 0}
+    newInputObject: {fileID: 0}
+    inputNodeId: 0
+    inputNodeUniqueId: 0
+  - isAsset: 0
+    inputObject: {fileID: 0}
+    newInputObject: {fileID: 0}
+    inputNodeId: 0
+    inputNodeUniqueId: 0
+  - isAsset: 0
+    inputObject: {fileID: 0}
+    newInputObject: {fileID: 0}
+    inputNodeId: 0
+    inputNodeUniqueId: 0
+  - isAsset: 0
+    inputObject: {fileID: 0}
+    newInputObject: {fileID: 0}
+    inputNodeId: 0
+    inputNodeUniqueId: 0
+  - isAsset: 0
+    inputObject: {fileID: 0}
+    newInputObject: {fileID: 0}
+    inputNodeId: 0
+    inputNodeUniqueId: 0
+  - isAsset: 0
+    inputObject: {fileID: 0}
+    newInputObject: {fileID: 0}
+    inputNodeId: 0
+    inputNodeUniqueId: 0
+  - isAsset: 0
+    inputObject: {fileID: 0}
+    newInputObject: {fileID: 0}
+    inputNodeId: 0
+    inputNodeUniqueId: 0
+  - isAsset: 0
+    inputObject: {fileID: 0}
+    newInputObject: {fileID: 0}
+    inputNodeId: 0
+    inputNodeUniqueId: 0
+  - isAsset: 0
+    inputObject: {fileID: 0}
+    newInputObject: {fileID: 0}
+    inputNodeId: 0
+    inputNodeUniqueId: 0
+  - isAsset: 0
+    inputObject: {fileID: 0}
+    newInputObject: {fileID: 0}
+    inputNodeId: 0
+    inputNodeUniqueId: 0
+  - isAsset: 0
+    inputObject: {fileID: 0}
+    newInputObject: {fileID: 0}
+    inputNodeId: 0
+    inputNodeUniqueId: 0
+  - isAsset: 0
+    inputObject: {fileID: 0}
+    newInputObject: {fileID: 0}
+    inputNodeId: 0
+    inputNodeUniqueId: 0
+  - isAsset: 0
+    inputObject: {fileID: 0}
+    newInputObject: {fileID: 0}
+    inputNodeId: 0
+    inputNodeUniqueId: 0
+  - isAsset: 0
+    inputObject: {fileID: 0}
+    newInputObject: {fileID: 0}
+    inputNodeId: 0
+    inputNodeUniqueId: 0
+  - isAsset: 0
+    inputObject: {fileID: 0}
+    newInputObject: {fileID: 0}
+    inputNodeId: 0
+    inputNodeUniqueId: 0
+  - isAsset: 0
+    inputObject: {fileID: 0}
+    newInputObject: {fileID: 0}
+    inputNodeId: 0
+    inputNodeUniqueId: 0
+  - isAsset: 0
+    inputObject: {fileID: 0}
+    newInputObject: {fileID: 0}
+    inputNodeId: 0
+    inputNodeUniqueId: 0
+  - isAsset: 0
+    inputObject: {fileID: 0}
+    newInputObject: {fileID: 0}
+    inputNodeId: 0
+    inputNodeUniqueId: 0
+  - isAsset: 0
+    inputObject: {fileID: 0}
+    newInputObject: {fileID: 0}
+    inputNodeId: 0
+    inputNodeUniqueId: 0
+  - isAsset: 0
+    inputObject: {fileID: 0}
+    newInputObject: {fileID: 0}
+    inputNodeId: 0
+    inputNodeUniqueId: 0
+  - isAsset: 0
+    inputObject: {fileID: 0}
+    newInputObject: {fileID: 0}
+    inputNodeId: 0
+    inputNodeUniqueId: 0
+  - isAsset: 0
+    inputObject: {fileID: 0}
+    newInputObject: {fileID: 0}
+    inputNodeId: 0
+    inputNodeUniqueId: 0
+  - isAsset: 0
+    inputObject: {fileID: 0}
+    newInputObject: {fileID: 0}
+    inputNodeId: 0
+    inputNodeUniqueId: 0
+  - isAsset: 0
+    inputObject: {fileID: 0}
+    newInputObject: {fileID: 0}
+    inputNodeId: 0
+    inputNodeUniqueId: 0
+  - isAsset: 0
+    inputObject: {fileID: 0}
+    newInputObject: {fileID: 0}
+    inputNodeId: 0
+    inputNodeUniqueId: 0
+  myParmChoiceInfoStrings:
+  - label: Scale Rot Trans
+    value: srt
+  - label: Scale Trans Rot
+    value: str
+  - label: Rot Scale Trans
+    value: rst
+  - label: Rot Trans Scale
+    value: rts
+  - label: Trans Scale Rot
+    value: tsr
+  - label: Trans Rot Scale
+    value: trs
+  - label: Rx Ry Rz
+    value: xyz
+  - label: Rx Rz Ry
+    value: xzy
+  - label: Ry Rx Rz
+    value: yxz
+  - label: Ry Rz Rx
+    value: yzx
+  - label: Rz Rx Ry
+    value: zxy
+  - label: Rz Ry Rx
+    value: zyx
+  - label: Clean Transform
+    value: clean
+  - label: Clean Translates
+    value: cleantrans
+  - label: Clean Rotates
+    value: cleanrot
+  - label: Clean Scales
+    value: cleanscales
+  - label: Extract Pre-transform
+    value: extract
+  - label: Reset Pre-transform
+    value: reset
+  - label: off
+    value: off
+  - label: on
+    value: on
+  - label: off
+    value: off
+  - label: on
+    value: on
+  - label: off
+    value: off
+  - label: on
+    value: on
+  - label: Don't Use Up Vector
+    value: off
+  - label: Use Up Vector
+    value: on
+  - label: Use Quaternions
+    value: quat
+  - label: Use Global Position
+    value: pos
+  - label: Use Up Object
+    value: obj
+  - label: Uniform
+    value: uniform
+  - label: Arc Length
+    value: arc
+  - label: off
+    value: off
+  - label: on
+    value: on
+  - label: No Object
+    value: 
+  - label: Input Object 1
+    value: _input1_obj_
+  - label: Input Object 2
+    value: _input2_obj_
+  - label: Input Object 3
+    value: _input3_obj_
+  - label: Input Object 4
+    value: _input4_obj_
+  - label: _separator_
+    value: _separator_
+  - label: sphere_object1
+    value: sphere_object1
+  - label: off
+    value: off
+  - label: on
+    value: on
+  - label: off
+    value: off
+  - label: on
+    value: on
+  - label: off
+    value: off
+  - label: on
+    value: on
+  myParmStringValues:
+  - 
+  - 
+  - 
+  - on
+  - 
+  - 'Sub-Network Input #1'
+  - 'Sub-Network Input #2'
+  - 'Sub-Network Input #3'
+  - 'Sub-Network Input #4'
+  - _input1_obj_
+  - '*'
+  - 
+  myLastChangedParmId: -1
+  myParmsUndoInfo: {fileID: 1387064369}
+  myFolderListSelections: 0000000000000000
+  myFolderListSelectionIds: ffffffffffffffff
+--- !u!114 &1627627259
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1627627257}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f0b6aed776866648abb28f3e8379991, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myAssetId: 0
+  myNodeId: 0
+  myObjectNodeId: 0
+  myAsset: {fileID: 1627627259}
+  myObjectId: -1
+  myObjectName: object_name
+  myObjectVisible: 0
+  myObjectInfo:
+    hasTransformChanged: 0
+    haveGeosChanged: 0
+    isVisible: 0
+    isInstancer: 0
+    isInstanced: 0
+    geoCount: 0
+    nodeId: -1
+    objectToInstanceId: 0
+  myGeos: []
+  myNodeInfo:
+    id: 0
+    parentId: 2
+    nameSH: 7
+    type: 1
+    isValid: 1
+    totalCookCount: 1
+    uniqueHoudiniNodeId: 13
+    parmCount: 42
+    parmIntValueCount: 14
+    parmFloatValueCount: 25
+    parmStringValueCount: 12
+    parmChoiceCount: 46
+    childNodeCount: 1
+    inputCount: 0
+    createdPostAssetLoad: 1
+  myPreset: 235053495f5052455345540a76657273696f6e20322e30610a6f7076616c7565730a7b0a76657273696f6e20302e380a7374647377697463686572095b2030096c6f636b733d30205d09280930093009290a784f7264095b2030096c6f636b733d30205d092809227372742209290a724f7264095b2030096c6f636b733d30205d0928092278797a2209290a74095b2030096c6f636b733d30205d092809312e34393633363137333234383239313032093009322e3033353234303431313735383432323909290a72095b2030096c6f636b733d30205d09280930092d30093009290a73095b2030096c6f636b733d30205d092809310931093109290a70095b2030096c6f636b733d30205d092809300930093009290a7363616c65095b2030096c6f636b733d30205d0928093109290a7072655f78666f726d095b2030096c6f636b733d30205d0928093009290a6b656570706f73095b2030096c6f636b733d30205d092809226f66662209290a6368696c64636f6d70095b2030096c6f636b733d30205d092809226f66662209290a636f6e73747261696e74735f6f6e095b2030096c6f636b733d30205d092809226f66662209290a636f6e73747261696e74735f70617468095b2030096c6f636b733d30205d092809222209290a6c6f6f6b617470617468095b2030096c6f636b733d30205d092809222209290a6c6f6f6b75706f626a70617468095b2030096c6f636b733d30205d092809222209290a6c6f6f6b7570095b2030096c6f636b733d30205d0928096f6e09290a706174686f626a70617468095b2030096c6f636b733d30205d092809222209290a726f6c6c095b2030096c6f636b733d30205d0928093009290a706f73095b2030096c6f636b733d30205d0928093009290a757061726d74797065095b2030096c6f636b733d30205d092809226172632209290a706174686f7269656e74095b2030096c6f636b733d30205d0928093109290a7570095b2030096c6f636b733d30205d092809300931093009290a62616e6b095b2030096c6f636b733d30205d0928093009290a6c6162656c31095b2030096c6f636b733d30205d092809225375622d4e6574776f726b20496e7075742023312209290a6c6162656c32095b2030096c6f636b733d30205d092809225375622d4e6574776f726b20496e7075742023322209290a6c6162656c33095b2030096c6f636b733d30205d092809225375622d4e6574776f726b20496e7075742023332209290a6c6162656c34095b2030096c6f636b733d30205d092809225375622d4e6574776f726b20496e7075742023342209290a74646973706c6179095b2030096c6f636b733d30205d092809226f66662209290a646973706c6179095b2030096c6f636b733d30205d0928093109290a6f75747075746f626a095b2030096c6f636b733d30205d0928095f696e707574315f6f626a5f09290a76697369626c656f626a65637473095b2030096c6f636b733d30205d0928092a09290a7069636b696e67095b2030096c6f636b733d30205d092809226f6e2209290a7069636b736372697074095b2030096c6f636b733d30205d092809222209290a63616368696e67095b2030096c6f636b733d30205d092809226f6e2209290a7573655f64636f6c6f72095b2030096c6f636b733d30205d092809226f6e2209290a64636f6c6f72095b2030096c6f636b733d30205d092809310931093109290a737464737769746368657233095b2030096c6f636b733d30205d09280930093009290a7363616c6532095b2030096c6f636b733d30205d0928093109290a66726571095b2030096c6f636b733d30205d0928093209290a6c6163095b2030096c6f636b733d30205d092809312e38343109290a726f756768095b2030096c6f636b733d30205d092809302e3509290a7d0a
+  myAssetValidationId: 13
+  myAssetName: rock1
+  myAssetOpName: Object/rock
+  myAssetHelp: 
+  myAssetType: 0
+  myTransformInputCount: 0
+  myGeoInputCount: 0
+  myGeoInputsTransformTypes: 
+  myDownStreamTransformAssets: []
+  myUpStreamTransformAssets: []
+  myUpStreamTransformObjects: []
+  myUpStreamGeoAssets: []
+  myUpStreamGeoObjects: []
+  myUpStreamGeoInputAssetIds: 
+  myUpStreamGeoInputAssetValidationIds: 
+  myDownStreamAssets: []
+  myPresetsMap: {fileID: 0}
+  myObjectCount: 1
+  myHandleCount: 0
+  myGameObjects:
+  - {fileID: 750544578}
+  myGeoAttributeManagerMap: {fileID: 0}
+  myBakeStartTime: 0
+  myBakeEndTime: 1
+  myBakeSamplesPerSecond: 30
+  myShowHoudiniControls: 1
+  myShowCookLog: 0
+  myShowHelp: 0
+  myShowAssetSettings: 1
+  myShowBakeOptions: 0
+  myShowPaintTools: 0
+  myShowInputControls: 1
+  myAssetOptionsCategory: 0
+  myIsGeoVisible: 1
+  myShowPinnedInstances: 1
+  myShowOnlyVertexColours: 0
+  myGenerateUVs: 0
+  myGenerateLightmapUV2s: 0
+  myGenerateTangents: 1
+  myEnableCooking: 1
+  myCookingTriggersDownCooks: 1
+  myPlaymodePerFrameCooking: 0
+  myPushUnityTransformToHoudini: 1
+  myTransformChangeTriggersCooks: 0
+  myImportTemplatedGeos: 0
+  mySplitGeosByGroupOverride: 0
+  mySplitGeosByGroup: 1
+  mySplitPointsByVertexAttributesOverride: 0
+  mySplitPointsByVertexAttributes: 1
+  myOmitPartNameEnumeration: 0
+  myEnableLogging: 0
+  myTransInputNames: []
+  myGeoInputNames: []
+  myLastLocalToWorld:
+    e00: 1
+    e01: 0
+    e02: 0
+    e03: -1.4963617
+    e10: 0
+    e11: 1
+    e12: 0
+    e13: 0
+    e20: 0
+    e21: 0
+    e22: 1
+    e23: 2.0352404
+    e30: 0
+    e31: 0
+    e32: 0
+    e33: 1
+  myAssetOTLUndoInfo: {fileID: 501909887}
+  myAssetPath: Assets/rock.hdanc
+  myActiveAttributeManager: {fileID: 0}
+  myEditPaintGeos: []
+  myHandleInfos: []
+--- !u!4 &1627627260
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1627627257}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.4963617, y: 0, z: 2.0352404}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 750544580}
+  m_Father: {fileID: 0}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1718820892
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1718820894}
+  - component: {fileID: 1718820893}
+  m_Layer: 0
+  m_Name: Directional Light
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!108 &1718820893
+Light:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1718820892}
+  m_Enabled: 1
+  serializedVersion: 8
+  m_Type: 1
+  m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
+  m_Intensity: 1
+  m_Range: 10
+  m_SpotAngle: 30
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 2
+    m_Resolution: -1
+    m_CustomResolution: -1
+    m_Strength: 1
+    m_Bias: 0.05
+    m_NormalBias: 0.4
+    m_NearPlane: 0.2
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_Lightmapping: 4
+  m_AreaSize: {x: 1, y: 1}
+  m_BounceIntensity: 1
+  m_FalloffTable:
+    m_Table[0]: 0
+    m_Table[1]: 0
+    m_Table[2]: 0
+    m_Table[3]: 0
+    m_Table[4]: 0
+    m_Table[5]: 0
+    m_Table[6]: 0
+    m_Table[7]: 0
+    m_Table[8]: 0
+    m_Table[9]: 0
+    m_Table[10]: 0
+    m_Table[11]: 0
+    m_Table[12]: 0
+  m_ColorTemperature: 6570
+  m_UseColorTemperature: 0
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
+--- !u!4 &1718820894
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1718820892}
+  m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
+  m_LocalPosition: {x: 0, y: 3, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!1 &1944467857
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1944467859}
+  - component: {fileID: 1944467858}
+  m_Layer: 0
+  m_Name: uninitialized_geo
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1944467858
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1944467857}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d560dd11496e0249b374ce33d65f155, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myAssetId: 5
+  myNodeId: 6
+  myObjectNodeId: 6
+  myAsset: {fileID: 1577221647}
+  myObjectId: 6
+  myObjectName: sphere_object1
+  myObjectVisible: 1
+  myObjectInfo:
+    hasTransformChanged: 0
+    haveGeosChanged: 0
+    isVisible: 0
+    isInstancer: 0
+    isInstanced: 0
+    geoCount: 0
+    nodeId: -1
+    objectToInstanceId: 0
+  myGeos: []
+  myGeoId: 7
+  myGeoName: geo_name
+  myGeoType: 0
+  myIsEditable: 0
+  myIsDisplay: 1
+  myObjectControl: {fileID: 905427722}
+  myGeoAttributeManager: {fileID: 0}
+  myParts: []
+--- !u!4 &1944467859
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1944467857}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 905427723}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
