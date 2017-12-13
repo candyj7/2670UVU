@@ -1,0 +1,17 @@
+/Users/candicecelestejensen/Desktop/Bear Prototypes/Temp/bin/Debug/Assembly-CSharp.dll.mdb
+/Users/candicecelestejensen/Desktop/Bear Prototypes/Temp/bin/Debug/Assembly-CSharp.dll
+/Users/candicecelestejensen/Desktop/Bear Prototypes/obj/Debug/Assembly-CSharp.dll
+/Users/candicecelestejensen/Desktop/Bear Prototypes/obj/Debug/Assembly-CSharp.dll.mdb
+/Users/candicecelestejensen/Desktop/Bear Prototypes/Temp/bin/Debug/UnityEngine.dll
+/Users/candicecelestejensen/Desktop/Bear Prototypes/Temp/bin/Debug/UnityEditor.dll
+/Users/candicecelestejensen/Desktop/Bear Prototypes/Temp/bin/Debug/UnityEngine.Networking.dll
+/Users/candicecelestejensen/Desktop/Bear Prototypes/Temp/bin/Debug/UnityEngine.UI.dll
+/Users/candicecelestejensen/Desktop/Bear Prototypes/Temp/bin/Debug/Mono.Cecil.dll
+/Users/candicecelestejensen/Desktop/Bear Prototypes/Temp/bin/Debug/Unity.SerializationLogic.dll
+/Users/candicecelestejensen/Desktop/Bear Prototypes/Temp/bin/Debug/Unity.DataContract.dll
+/Users/candicecelestejensen/Desktop/Bear Prototypes/Temp/bin/Debug/ICSharpCode.NRefactory.dll
+/Users/candicecelestejensen/Desktop/Bear Prototypes/Temp/bin/Debug/Unity.UNetWeaver.dll
+/Users/candicecelestejensen/Desktop/Bear Prototypes/Temp/bin/Debug/Unity.UNetWeaver.dll.mdb
+/Users/candicecelestejensen/Desktop/Bear Prototypes/Temp/bin/Debug/Unity.CecilTools.dll
+/Users/candicecelestejensen/Desktop/Bear Prototypes/Temp/bin/Debug/Mono.Cecil.Pdb.dll
+/Users/candicecelestejensen/Desktop/Bear Prototypes/Temp/bin/Debug/Mono.Cecil.Mdb.dll
